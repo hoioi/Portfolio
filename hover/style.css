@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+:root {
+  --background-color: #000;
+  --white-color: #fff;
+}
+
+#wrap {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background: var(--background-color);
+  overflow: hidden;
+}
+
+/*----container----*/
+
+.container {
+  position: relative;
+}
+
+.container h1 {
+  color: var(--white-color);
+  margin-top: 10%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container .pixar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* gap: 40px; */
+}
+
+/*----contentbox----*/
+
+.container .contentbox {
+  margin-top: 8%;
+  display: flex;
+  gap: 15px;
+}
+
+/*---- Toystory----*/
+
+.container .contentbox .movie {
+  width: 150px;
+  height: 300px;
+  background: url("./imgs/toystory.jpg") no-repeat center center;
+  background-size: cover;
+  filter: grayscale(1);
+  transition: 0.8s;
+}
+
+.container .contentbox .movie:hover {
+  transform: translateY(-40px);
+}
+
+.container .contentbox .movie_shadow {
+  width: 150px;
+  height: 300px;
+  background: url("./imgs/toystory.jpg") no-repeat center center;
+  background-size: cover;
+  transform: rotate(180deg);
+}
+
+/*---- bug----*/
+
+.container .contentbox #bug {
+  background: url("./imgs/bug.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.container .contentbox #bugShadow {
+  background: url("./imgs/bug.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+/*---- elemental----*/
+
+.container .contentbox #elemental {
+  background: url("./imgs/elemental.png") no-repeat center center;
+  background-size: cover;
+}
+
+.container .contentbox #elementalShadow {
+  background: url("./imgs/elemental.png") no-repeat center center;
+  background-size: cover;
+}
+
+/*---- insideout----*/
+
+.container .contentbox #insideout {
+  background: url("./imgs/insideout.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.container .contentbox #insideoutShadow {
+  background: url("./imgs/insideout.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+/*---- monster----*/
+
+.container .contentbox #monster {
+  background: url("./imgs/monster.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.container .contentbox #monsterShadow {
+  background: url("./imgs/monster.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+/*---- nemo----*/
+
+.container .contentbox #nemo {
+  background: url("./imgs/nemo.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.container .contentbox #nemoShadow {
+  background: url("./imgs/nemo.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+/*----princess----*/
+
+.container .contentbox #princess {
+  background: url("./imgs/princess.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.container .contentbox #princessShadow {
+  background: url("./imgs/princess.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+/*----ratatouille----*/
+
+.container .contentbox #ratatouille {
+  background: url("./imgs/ratatouille.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.container .contentbox #ratatouilleShadow {
+  background: url("./imgs/ratatouille.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+/*----up----*/
+
+.container .contentbox #up {
+  background: url("./imgs/up.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.container .contentbox #upShadow {
+  background: url("./imgs/up.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+/*----walle----*/
+
+.container .contentbox #walle {
+  background: url("./imgs/walle.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.container .contentbox #walleShadow {
+  background: url("./imgs/walle.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.container .contentbox .movie_shadow::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 300px;
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+.container .pixar {
+  top: 700px;
+  left: 35%;
+  position: absolute;
+}
+
+.container h3 {
+  color: var(--white-color);
+  font-size: 100px;
+  letter-spacing: 50px;
+  font-family: "Playfair Display", serif;
+}
+
+.container .pixar #dark {
+  width: 81px;
+  height: 108px;
+  background: url("./imgs/stand_dark.png") no-repeat center center;
+  background-size: cover;
+  margin-right: 50px;
+  cursor: pointer;
+}
+
+.container .pixar #white {
+  display: none;
+  width: 81px;
+  height: 108px;
+  background: url("./imgs/stand_light.png") no-repeat center center;
+  background-size: cover;
+  margin-right: 50px;
+  cursor: pointer;
+}
