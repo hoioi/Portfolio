@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FullPage</title>
+    <!--fullpage-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.css"
+    />
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.js"
+    ></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.extensions.min.js"
+    ></script>
+
+    <!-- fontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/55ffc41d4e.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <header>
+      <a href="#Num0">
+        <div class="nav">
+          <div class="icon">
+            <i class="fab fa-facebook-f"></i> <span>Facebook</span>
+          </div>
+        </div>
+      </a>
+      <a href="#Num1">
+        <div class="nav">
+          <div class="icon">
+            <i class="fab fa-twitter"></i> <span>Twitter</span>
+          </div>
+        </div>
+      </a>
+      <a href="#Num2">
+        <div class="nav">
+          <div class="icon">
+            <i class="fab fa-instagram"></i>
+            <span>Instagram</span>
+          </div>
+        </div>
+      </a>
+      <a href="#Num3">
+        <div class="nav">
+          <div class="icon">
+            <i id="git_icon" class="fab fa-github"></i> <span>GitHub</span>
+          </div>
+        </div>
+      </a>
+      <a href="#Num4">
+        <div class="nav">
+          <div class="icon">
+            <i id="you_icon" class="fab fa-youtube"></i> <span>YouTube</span>
+          </div>
+        </div>
+      </a>
+    </header>
+    <div id="fullpage">
+      <section id="Facebook" class="section">
+        <div class="wrap">
+          <div class="textbox">
+            <h1>facebook</h1>
+            <p>
+              Facebook에서 전세계에 있는 친구, 가족,<br />
+              지인들과 함께 이야기를 나눠보세요.
+            </p>
+          </div>
+          <div class="loginbox">
+            <div class="login">
+              <input type="text" placeholder="이메일 또는 전화번호" />
+              <input type="password" placeholder="비밀번호" />
+              <button class="loginButon">로그인</button>
+              <a href="#"><h2>비밀번호를 잊어버리셨나요?</h2></a>
+              <hr />
+              <button class="new">새 계정 만들기</button>
+            </div>
+            <p>
+              유명인, 브랜드 또는 비즈니스를 위한 <span>페이지 만들기.</span>
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="Twitter" class="section">
+        <div class="wrap">
+          <div class="container">
+            <div class="logo">
+              <div class="logobox">
+                <i class="fab fa-twitter"></i>
+              </div>
+            </div>
+            <div class="rightBox">
+              <h1>지금 일어나고 있는 일</h1>
+              <h2>지금 가입하세요.</h2>
+              <button class="google">
+                <i class="fab fa-google"></i> Google 계정으로 가입하기
+              </button>
+              <button class="apple">
+                <i class="fab fa-apple"></i> Apple에서 가입하기
+              </button>
+              <h4>또는</h4>
+              <button class="build">계정 만들기</button>
+              <p>
+                가입하시려면 <a href="">쿠키 사용</a>을 포함해
+                <a href="">이용약관</a>과
+                <a href="">개인정보 처리방침</a>에<br />
+                동의해야 합니다.
+              </p>
+              <h3>이미 트위터에 가입하셨나요?</h3>
+              <button class="login">로그인</button>
+            </div>
+          </div>
+          <footer>
+            <ul>
+              <a href=""> <li>소개</li> </a
+              ><a href=""> <li>X 앱 다운로드하기</li> </a
+              ><a href=""> <li>고객센터</li> </a
+              ><a href=""> <li>이용약관</li> </a
+              ><a href=""> <li>개인정보 처리방침</li> </a
+              ><a href=""> <li>쿠키 정책</li> </a
+              ><a href=""> <li>접근성</li> </a
+              ><a href=""> <li>광고 정보</li> </a
+              ><a href=""> <li>블로그</li> </a
+              ><a href=""> <li>상태</li> </a
+              ><a href=""> <li>채용</li> </a
+              ><a href=""> <li>브랜드 리소스</li> </a
+              ><a href=""> <li>광고</li> </a
+              ><a href=""> <li>마케팅</li> </a
+              ><a href=""> <li>비즈니스용 X</li> </a
+              ><a href=""> <li>개발자</li> </a
+              ><a href=""> <li>디렉터리</li> </a
+              ><a href="">
+                <li>설정</li>
+              </a>
+              <li>© 2023 X Corp.</li>
+            </ul>
+          </footer>
+        </div>
+      </section>
+      <section id="Instagram" class="section">
+        <div class="wrap">
+          <div class="container">
+            <div class="leftImg">
+              <div class="img"></div>
+            </div>
+            <div class="rightloginbox">
+              <div class="rightbox">
+                <div class="loginbox">
+                  <div class="logoimg"></div>
+                  <input
+                    type="text"
+                    placeholder="전화번호,사용자 이름 또는 이메일"
+                  />
+                  <input type="password" placeholder="비밀번호" />
+                  <button>로그인</button>
+                  <h4>또는</h4>
+                  <a href=""
+                    ><i class="fab fa-facebook-square"></i>Facebook으로
+                    로그인하기</a
+                  >
+                  <h3>비밀번호를 잊어버리셨나요?</h3>
+                </div>
+                <div class="sign_up">
+                  <h3>계정이 없으신가요?<a href="">가입하기</a></h3>
+                </div>
+                <h2>앱을 다운로드하세요.</h2>
+                <div class="buttonbox">
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.instagram.android&referrer=ig_mid%3D396D4609-4027-444D-B305-B5220A0633B9%26utm_campaign%3DloginPage%26utm_content%3Dlo%26utm_source%3Dinstagramweb%26utm_medium%3Dbadge%26original_referrer%3Dhttps://www.google.com/&pli=1"
+                  >
+                    <div class="google">
+                      <i class="fab fa-google-play"></i>
+                      <div class="text">
+                        <h4>다운로드 하기</h4>
+                        <h3>GooglePlay</h3>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div class="microsoft">
+                      <i class="fab fa-microsoft"></i>
+                      <div class="text">
+                        <h3>Microsoft</h3>
+                        <h4>에서 가져오기</h4>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <footer>
+            <ul>
+              <div>
+                <a href=""> <li>Meta</li> </a><a href=""> <li>소개</li> </a
+                ><a href=""> <li>블로그</li> </a
+                ><a href=""> <li>채용정보</li> </a
+                ><a href=""> <li>도움말</li> </a><a href=""> <li>API</li> </a
+                ><a href=""> <li>개인정보처리방침</li> </a
+                ><a href=""> <li>약관</li> </a><a href=""> <li>위치</li> </a
+                ><a href=""> <li>Instagram Lite</li> </a
+                ><a href=""> <li>Threads</li> </a
+                ><a href=""> <li>연락처 업로드 & 비사용자</li> </a
+                ><a href="">
+                  <li>Meta Verified</li>
+                </a>
+              </div>
+              <div>
+                <a href=""> <li>한국어</li> </a
+                ><a href="">
+                  <li>© 2023 Instagram from Meta</li>
+                </a>
+              </div>
+            </ul>
+          </footer>
+        </div>
+      </section>
+      <section id="GitHub" class="section">
+        <div class="wrap">
+          <div class="container">
+            <i class="fab fa-github"></i>
+            <h1>Sign in to GitHub</h1>
+            <div class="loginbox">
+              <h2>Username or email address</h2>
+              <input type="text" />
+              <div class="password">
+                <h2>Password</h2>
+                <a href="https://github.com/password_reset"
+                  ><p>Forgot password?</p></a
+                >
+              </div>
+              <input type="password" />
+              <button>Sign in</button>
+            </div>
+            <div class="loginbox_2">
+              <a href="">Sign in with a passkey</a>
+              <div class="create">
+                <p>New to GitHub?</p>
+                <a href=""><h4>Create an account</h4></a>
+              </div>
+            </div>
+            <ul>
+              <a href=""><li>Terms</li></a>
+              <a href=""><li>Privacy</li></a>
+              <a href=""><li>Docs</li></a>
+              <a href=""><li class="Contact">Contact GitHub Support</li></a>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="YouTube" class="section">
+        <div class="wrap">
+          <div class="container">
+            <div class="loginbox">
+              <i class="fab fa-youtube"></i>
+              <h1>로그인</h1>
+              <h2>YouTube로 이동</h2>
+              <div class="input">
+                <input type="text" placeholder="이메일 또는 휴대전화" />
+                <a href=""><h3>이메일을 잊으셨나요?</h3></a>
+              </div>
+              <h3>
+                내 컴퓨터가 아닌가요? 게스트 모드를 사용하여 비공개로
+                로그인하세요. <a href="">자세히 알아보기</a>
+              </h3>
+              <div class="bottombox">
+                <a href=""><h4>계정만들기</h4></a>
+                <button>다음</button>
+              </div>
+            </div>
+            <footer>
+              <select name="">
+                <option value="korean" selected>한국어</option>
+                <option value="Chinese">中文（香港）</option>
+                <option value="Japanese">日本語</option>
+                <option value="English">English</option>
+              </select>
+              <ul>
+                <a href="#"><li>도움말</li></a>
+                <a href="#"><li>개인정보방침</li></a>
+                <a href="#"><li>약관</li></a>
+              </ul>
+            </footer>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
