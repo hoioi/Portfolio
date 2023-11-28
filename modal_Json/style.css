@@ -189,8 +189,9 @@ a {
   align-items: center;
 }
 
-.modal .leftbox .img {
-  background: url("./imgs/LA_TULIPE.jpg") no-repeat center center;
+.modal .leftbox .modal_img {
+  background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
   width: 400px;
   height: 400px;

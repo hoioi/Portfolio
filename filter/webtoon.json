@@ -1,0 +1,20 @@
+[
+  {
+    "img": "./imgs/romance/super_secret.jpg",
+    "title_name": "슈퍼시크릿",
+    "artist": "이온",
+    "grade": "★9.98"
+  },
+  {
+    "img": "./imgs/action/boxer.jpg",
+    "title_name": "더 복서",
+    "artist": "정지훈",
+    "grade": "★9.91"
+  },
+  {
+    "img": "./imgs/action/warrior.jpg",
+    "title_name": "열렙전사",
+    "artist": "김세훈",
+    "grade": "★9.38"
+  }
+]
