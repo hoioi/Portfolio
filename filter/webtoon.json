@@ -16,5 +16,137 @@
     "title_name": "열렙전사",
     "artist": "김세훈",
     "grade": "★9.38"
+  },
+  {
+    "img": "./imgs/fantasy/dragon.jpg",
+    "title_name": "합격시켜주세용",
+    "artist": "이온",
+    "grade": "★9.98"
+  },
+  {
+    "img": "./imgs/fantasy/tiger.jpg",
+    "title_name": "호랑이 들어와요",
+    "artist": "배세혁/ 유은",
+    "grade": "★9.97"
+  },
+  {
+    "img": "./imgs/comic/devil.jpg",
+    "title_name": "심심한 마왕",
+    "artist": "김상민",
+    "grade": "★9.86"
+  },
+  {
+    "img": "./imgs/comic/jungle.png",
+    "title_name": "정글고등학교",
+    "artist": "김규삼",
+    "grade": "★9.91"
+  },
+  {
+    "img": "./imgs/daily_life/dog.jpg",
+    "title_name": "노곤하개",
+    "artist": "홍끼",
+    "grade": "★9.98"
+  },
+  {
+    "img": "./imgs/romance/yumi.jpg",
+    "title_name": "유미의 세포들",
+    "artist": "이동건",
+    "grade": "★9.93"
+  },
+  {
+    "img": "./imgs/daily_life/independence.jpg",
+    "title_name": "독립일기",
+    "artist": "자까",
+    "grade": "★9.97"
+  },
+  {
+    "img": "./imgs/fantasy/top_of_god.jpg",
+    "title_name": "신의탑",
+    "artist": "SIU",
+    "grade": "★9.88"
+  },
+  {
+    "img": "./imgs/comic/sound.jpg",
+    "title_name": "마음의 소리",
+    "artist": "조석",
+    "grade": "★9.86"
+  },
+  {
+    "img": "./imgs/action/sen.jpg",
+    "title_name": "쎈놈",
+    "artist": "박용제",
+    "grade": "★9.76"
+  },
+  {
+    "img": "./imgs/action/sindolim.jpg",
+    "title_name": "신도림",
+    "artist": "오세형",
+    "grade": "★9.94"
+  },
+  {
+    "img": "./imgs/daily_life/marry.jpg",
+    "title_name": "신혼일기",
+    "artist": "자까",
+    "grade": "★9.94"
+  },
+  {
+    "img": "./imgs/daily_life/preschool.jpg",
+    "title_name": "어린이집 다니는구나",
+    "artist": "구나",
+    "grade": "★9.97"
+  },
+  {
+    "img": "./imgs/comic/university.jpg",
+    "title_name": "대학일기",
+    "artist": "자까",
+    "grade": "★9.97"
+  },
+  {
+    "img": "./imgs/romance/revolution.jpeg",
+    "title_name": "연애혁명",
+    "artist": "232",
+    "grade": "★9.87"
+  },
+  {
+    "img": "./imgs/romance/girl_and_boy.jpg",
+    "title_name": "소년,소녀 연애하다",
+    "artist": "네이버웹툰작가",
+    "grade": "★9.91"
+  },
+  {
+    "img": "./imgs/action/stom.jpg",
+    "title_name": "폭풍의 전학생",
+    "artist": "강냉이",
+    "grade": "★9.56"
+  },
+  {
+    "img": "./imgs/daily_life/graduate_school.jpg",
+    "title_name": "대학원 탈출일지",
+    "artist": "요다",
+    "grade": "★9.97"
+  },
+  {
+    "img": "./imgs/fantasy/collapse.jpg",
+    "title_name": "멸망 이후의 세계",
+    "artist": "언데드딸기,감자/싱숑",
+    "grade": "★9.92"
+  },
+  {
+    "img": "./imgs/fantasy/lesa.jpg",
+    "title_name": "레사",
+    "artist": "POGO",
+    "grade": "★9.97"
+  },
+  {
+    "img": "./imgs/comic/innate.jpg",
+    "title_name": "선천적얼간이들",
+    "artist": "가스파드",
+    "grade": "★9.96"
+  },
+  {
+    "img": "./imgs/romance/baby.jpg",
+    "title_name": "베이비폭군",
+    "artist": "아원 / 이흰",
+    "grade": "★9.97"
   }
 ]

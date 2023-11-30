@@ -1,0 +1,122 @@
+[
+  {
+    "main_img": "./img_main/hydrogen_ele/Ioniq6.png",
+    "car_name": "아이오닉 6",
+    "car_type": "전기",
+    "car_price": "5,200만원~"
+  },
+  {
+    "main_img": "./img_main/hydrogen_ele/NEXO.png",
+    "car_name": "넥쏘",
+    "car_type": "전기, 수소",
+    "car_price": "6,950만원~"
+  },
+  {
+    "main_img": "./img_main/hydrogen_ele/the_all_new_kona_ele.png",
+    "car_name": "디 올 뉴 코나 Electric",
+    "car_type": "전기",
+    "car_price": "6,950만원~"
+  },
+  {
+    "main_img": "./img_main/hydrogen_ele/porter2-ele.png",
+    "car_name": "포터 2 Electric",
+    "car_type": "전기",
+    "car_price": "4,375만원~"
+  },
+  {
+    "main_img": "./img_main/N/ioniq5_n.png",
+    "car_name": "아이오닉 5 N",
+    "car_type": "N",
+    "car_price": "7,600만원~"
+  },
+  {
+    "main_img": "./img_main/N/the-new-avante-n.png",
+    "car_name": "더 뉴 아반떼 N",
+    "car_type": "N",
+    "car_price": "3,352만원~"
+  },
+  {
+    "main_img": "./img_main/sedan/the-new-avante.png",
+    "car_name": "더 뉴 아반떼",
+    "car_type": "승용",
+    "car_price": "1,975만원~"
+  },
+  {
+    "main_img": "./img_main/sedan/the-new-avante-hybrid.png",
+    "car_name": "더 뉴 아반떼 Hybrid",
+    "car_type": "승용",
+    "car_price": "2,466만원~"
+  },
+  {
+    "main_img": "./img_main/sedan/sonata-the-edge.png",
+    "car_name": "쏘나타 디 엣지",
+    "car_type": "승용",
+    "car_price": "2,808만원~"
+  },
+  {
+    "main_img": "./img_main/sedan/the-all-new-grandeur.png",
+    "car_name": "디 올 뉴 그랜저",
+    "car_type": "승용",
+    "car_price": "3,743만원~"
+  },
+  {
+    "main_img": "./img_main/sedan/the-all-new-grandeur-hybrid.png",
+    "car_name": "디 올 뉴 그랜저 Hybrid",
+    "car_type": "승용",
+    "car_price": "4,266만원~"
+  },
+  {
+    "main_img": "./img_main/SUV/the-all-new-santafe.png",
+    "car_name": "디 올 뉴 싼타페",
+    "car_type": "suv",
+    "car_price": "3,546만원~"
+  },
+  {
+    "main_img": "./img_main/SUV/venue-23my.png",
+    "car_name": "베뉴",
+    "car_type": "suv",
+    "car_price": "2,146만원~"
+  },
+  {
+    "main_img": "./img_main/SUV/the-all-new-kona.png",
+    "car_name": "디 올 뉴 코나",
+    "car_type": "suv",
+    "car_price": "2,486만원~"
+  },
+  {
+    "main_img": "./img_main/SUV/tucson.png",
+    "car_name": "투싼",
+    "car_type": "suv",
+    "car_price": "2,603만원~"
+  },
+  {
+    "main_img": "./img_main/SUV/palisade.png",
+    "car_name": "팰리세이드",
+    "car_type": "suv",
+    "car_price": "3,896만원~"
+  },
+  {
+    "main_img": "./img_main/truck_taxi/porter2.png",
+    "car_name": "포터2",
+    "car_type": "트럭",
+    "car_price": "2,028만원~"
+  },
+  {
+    "main_img": "./img_main/truck_taxi/the-all-new-grandeur-taxi.png",
+    "car_name": "디 올 뉴 그랜저 택시",
+    "car_type": "택시",
+    "car_price": "3,580만원~"
+  },
+  {
+    "main_img": "./img_main/truck_taxi/staria-lounge-mobility.png",
+    "car_name": "스타리아 라운지 모빌리티",
+    "car_type": "택시",
+    "car_price": "3,945만원~"
+  },
+  {
+    "main_img": "./img_main/truck_taxi/porter2-special-vehicle.png",
+    "car_name": "포터2 특장차",
+    "car_type": "트럭",
+    "car_price": "2,199만원~"
+  }
+]
