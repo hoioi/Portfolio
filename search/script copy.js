@@ -1,6 +1,7 @@
 /*----mainPage_json----*/
 
 const cars = document.querySelectorAll(".car");
+const search = document.querySelector(".search");
 
 const url = "main.json";
 fetch(url)
@@ -18,46 +19,41 @@ fetch(url)
       car_priceElement.innerHTML = infoData[i].car_price;
       main_imgElement.style.backgroundImage = `url(${infoData[i].main_img})`;
     });
+    const getSearchResult = () => {
+      if (search == "") {
+        console.log(infoData);
+        return infoData;
+      } else {
+        return infoData.filter((it) =>
+          it.car_name.toLowerCase().includes(search)
+        );
+      }
+    };
+    search.addEventListener("input", getSearchResult);
+    // getSearchResult().map((it) => [...it]);
+    console.log(getSearchResult());
   });
 
-const search = document.querySelector(".search");
+// search.addEventListener("input", () => {
+//   const searchValue = search.value.trim().toLowerCase();
 
-search.addEventListener("input", () => {
-  const searchValue = search.value.trim().toLowerCase();
+//   cars.forEach((car) => {
+//     const carName = car.dataset.name.toLowerCase();
+//     const carType = car.dataset.type.toLowerCase();
 
-  let filteredCars = 0;
-
-  cars.forEach((car) => {
-    const carName = car.dataset.name.toLowerCase();
-    const carType = car.dataset.type.toLowerCase();
-
-    const isMatch =
-      carName.includes(searchValue) || carType.includes(searchValue);
-    car.style.display = isMatch ? "block" : "none";
-
-    if (isMatch) {
-      filteredCars++;
-    }
-  });
-
-  const resultText = document.querySelector("#resultText");
-  resultText.innerHTML = `검색하신 결과 ${filteredCars}건이 나왔습니다.`;
-});
+//     const result =
+//       carName.includes(searchValue) || carType.includes(searchValue);
+//     car.style.display = result ? "block" : "none";
+//   });
+// });
 
 // Reset Display on Empty Search
-search.addEventListener("input", () => {
-  if (search.value === "") {
-    cars.forEach((car) => {
-      car.style.display = "block";
-    });
-
-    const resultText = document.querySelector("#resultText");
-
-    resultText.innerHTML = `검색하신 결과 0건이 나왔습니다.`;
-  }
-});
-
-console.log(resultText);
+// search.addEventListener("keyup", () => {
+//   if (search.value !== "") return;
+//   cars.forEach((car) => {
+//     car.style.display = "block";
+//   });
+// });
 
 /*----modal on/off----*/
 
@@ -93,7 +89,6 @@ fetch(url02)
     cars.forEach((car, j) => {
       car.addEventListener("click", () => {
         const infoDataII = infoData[j];
-
         modal_subtitle.innerHTML = infoData[j].subtitle;
         modal_titlename.innerHTML = infoData[j].titlename;
         modal_price.innerHTML = infoData[j].price;

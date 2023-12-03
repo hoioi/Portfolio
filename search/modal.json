@@ -1,0 +1,182 @@
+[
+  {
+    "subtitle": "내가 만드는 세상",
+    "titlename": "아이오닉6",
+    "price": "5,200만원~",
+    "mileage": "~6.2km/kWh",
+    "people": "5명",
+    "displacement": "-",
+    "imge": "./img_modal/hydrogen_ele/ioniq6.png"
+  },
+  {
+    "subtitle": "Positive Energy, NEXO",
+    "titlename": "넥쏘",
+    "price": "6,950만원~",
+    "mileage": "~96.2km/kg",
+    "people": "5명",
+    "displacement": "-",
+    "imge": "./img_modal/hydrogen_ele/nexo.png"
+  },
+  {
+    "subtitle": "새로운 차원의 라이프",
+    "titlename": "디 올 뉴 코나 Electric",
+    "price": "4,452만원~",
+    "mileage": "~5.5km/kWh",
+    "people": "5명",
+    "displacement": "-",
+    "imge": "./img_modal/hydrogen_ele/all-new-kona-electric.png"
+  },
+  {
+    "subtitle": "새로운 친환경 EV 트럭",
+    "titlename": "포터 2 Electric",
+    "price": "4,375만원~",
+    "mileage": "~3.1km/kWh",
+    "people": "3명",
+    "displacement": "-",
+    "imge": "./img_modal/hydrogen_ele/porter2-electric.png"
+  },
+  {
+    "subtitle": "Everyday N Life",
+    "titlename": "아이오닉 5 N",
+    "price": "7,600만원~",
+    "mileage": "~3.7km/kWh",
+    "people": "5명",
+    "displacement": "-",
+    "imge": "./img_modal/N/ioniq5-n.png"
+  },
+  {
+    "subtitle": "Never just drive",
+    "titlename": "더 뉴 아반떼 N",
+    "price": "3,352만원~",
+    "mileage": "~10.6km/l",
+    "people": "5명",
+    "displacement": "~1,988cc",
+    "imge": "./img_modal/N/the-new-avante-n.png"
+  },
+  {
+    "subtitle": "지금, 더 매력적인 AVANTE",
+    "titlename": "더 뉴 아반떼",
+    "price": "1,975만원~",
+    "mileage": "~15.3km/l",
+    "people": "5명",
+    "displacement": "~1,598cc",
+    "imge": "./img_modal/sedan/the-new-avante.png"
+  },
+  {
+    "subtitle": "지금, 더 매력적인 AVANTE",
+    "titlename": "더 뉴 아반떼 Hybrid",
+    "price": "2,466만원~",
+    "mileage": "~21.1km/l",
+    "people": "5명",
+    "displacement": "~1,580cc",
+    "imge": "./img_modal/sedan/the-new-avante-hybrid.png"
+  },
+  {
+    "subtitle": "SONATA The Edge",
+    "titlename": "쏘나타 디 엣지",
+    "price": "2,808만원~",
+    "mileage": "~13.5km/l",
+    "people": "5명",
+    "displacement": "~1,999cc",
+    "imge": "./img_modal/sedan/sonata-the-edge.png"
+  },
+  {
+    "subtitle": "Outclass GRANDEUR",
+    "titlename": "디 올 뉴 그랜저",
+    "price": "3,743만원~",
+    "mileage": "~11.7km/l",
+    "people": "5명",
+    "displacement": "~3,470cc",
+    "imge": "./img_modal/sedan/all-new-grandeur.png"
+  },
+  {
+    "subtitle": "Outclass GRANDEUR Hybrid",
+    "titlename": "디 올 뉴 그랜저 Hybrid",
+    "price": "4,266만원~",
+    "mileage": "~18.0km/l",
+    "people": "5명",
+    "displacement": "~1,598cc",
+    "imge": "./img_modal/sedan/the-all-new-grandeur-hybrid.png"
+  },
+  {
+    "subtitle": "일상과 일상 사이를 열다.",
+    "titlename": "디 올 뉴 싼타페",
+    "price": "3,546만원~",
+    "mileage": "~11.0km/l",
+    "people": "5/6/7명",
+    "displacement": "~2,497cc",
+    "imge": "./img_modal/SUV/the-all-new-santafe.png"
+  },
+  {
+    "subtitle": "혼라이프를 즐기다",
+    "titlename": "베뉴",
+    "price": "2,146만원~",
+    "mileage": "~13.7km/l",
+    "people": "5명",
+    "displacement": "~1,598cc",
+    "imge": "./img_modal/SUV/venue.png"
+  },
+  {
+    "subtitle": "새로운 차원의 플레이",
+    "titlename": "디 올 뉴 코나",
+    "price": "2,486만원~",
+    "mileage": "~13.6km/l",
+    "people": "5명",
+    "displacement": "~1,999cc",
+    "imge": "./img_modal/SUV/the-all-new-kona.png"
+  },
+  {
+    "subtitle": "더 오래 머물수록 빛나는 가치",
+    "titlename": "투싼",
+    "price": "2,603만원~",
+    "mileage": "~14.5km/l",
+    "people": "5명",
+    "displacement": "~1,988cc",
+    "imge": "./img_modal/SUV/tucson.png"
+  },
+  {
+    "subtitle": "당신의 모든 세상",
+    "titlename": "팰리세이드",
+    "price": "3,896만원~",
+    "mileage": "~12.4km/l",
+    "people": "7/8명",
+    "displacement": "~3,778cc",
+    "imge": "./img_modal/SUV/palisade.png"
+  },
+  {
+    "subtitle": "새로운 성공을 준비하다",
+    "titlename": "포터2",
+    "price": "2,028만원~",
+    "mileage": "~7.0km/l",
+    "people": "3명",
+    "displacement": "~2.469cc",
+    "imge": "./img_modal/truck_taxi/porter2.png"
+  },
+  {
+    "subtitle": "압도적인 플래그십 세단의 자신감",
+    "titlename": "디 올 뉴 그랜저 택시",
+    "price": "3,580만원~",
+    "mileage": "~7.8km/l",
+    "people": "5명",
+    "displacement": "~3,470cc",
+    "imge": "./img_modal/truck_taxi/the-all-new-grandeur-taxi.png"
+  },
+  {
+    "subtitle": "Next Mobility Life",
+    "titlename": "스타리아 라운지 모빌리티",
+    "price": "3,945만원~",
+    "mileage": "~6.7km/l",
+    "people": "7~9명",
+    "displacement": "~2,199cc",
+    "imge": "./img_modal/truck_taxi/staria-lounge-mobility.png"
+  },
+  {
+    "subtitle": "",
+    "titlename": "포터2 특장차",
+    "price": "2,199만원~",
+    "mileage": "~8.8km/l",
+    "people": "3명",
+    "displacement": "~2,497cc",
+    "imge": "./img_modal/truck_taxi/porter2-special-vehicle.png"
+  }
+]

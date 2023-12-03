@@ -4,11 +4,56 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <!--fontawsome-->
+    <script
+      src="https://kit.fontawesome.com/ec7f17a22a.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--custom-->
     <link rel="stylesheet" href="./style.css" />
     <script defer src="./script.js"></script>
   </head>
   <body>
     <div class="wrap">
+      <div class="modal">
+        <div class="modalwrap">
+          <div class="modal_container">
+            <header>
+              <i class="fas fa-xmark"></i>
+            </header>
+            <section>
+              <div class="leftbox">
+                <h1 class="modal_subtitle"></h1>
+                <h2 class="modal_titlename"></h2>
+                <div class="detailsbox">
+                  <div class="details">
+                    <h4>가격</h4>
+                    <p class="modal_price"></p>
+                  </div>
+                  <div class="details">
+                    <h4>연비</h4>
+                    <p class="modal_mileage"></p>
+                  </div>
+                  <div class="details">
+                    <h4>승차 인원</h4>
+                    <p class="modal_people"></p>
+                  </div>
+                  <div class="details">
+                    <h4>배기량</h4>
+                    <p class="modal_displacement"></p>
+                  </div>
+                </div>
+              </div>
+              <div class="rightbox"></div>
+            </section>
+            <footer>
+              <button>구매 상담 신청</button>
+              <button>내 차 만들기</button>
+              <button>시승 신청</button>
+            </footer>
+          </div>
+        </div>
+      </div>
       <div class="container">
         <h1>HYUNDAI</h1>
         <input
@@ -17,7 +62,7 @@
           placeholder="#카테고리(예시:수소) 혹은 #이름을 입력하세요"
         />
         <div class="title_namebox">
-          <h2 class="title_name">#전체</h2>
+          <h2 id="resultText">검색하신 결과 0건이 나왔습니다.</h2>
         </div>
         <div class="carbox">
           <div class="car" data-name="아이오닉6" data-type="전기 수소">
