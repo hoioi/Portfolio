@@ -1,0 +1,44 @@
+.cartlist_wrap {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  transform: translateX(100%);
+}
+
+.cartlist_wrap.active {
+  transform: translateX(0%);
+}
+
+.cartlist_container {
+  width: 500px;
+  height: 100vh;
+  background: var(--main_brown-color);
+  position: relative;
+}
+
+.cartlist_btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 30px;
+  bottom: 20px;
+}
+
+.cartlist_btn button {
+  width: 200px;
+  height: 60px;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.cartlist_btn .cartlist_closebtn {
+  background: #fff;
+  outline: none;
+}
+
+.cartlist_btn .cartlist_order {
+  background: var(--main-color);
+}

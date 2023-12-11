@@ -1,0 +1,75 @@
+.header_wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  background: #fff;
+  z-index: 100;
+}
+
+.header_wrap .loginbox {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #707070;
+  width: 500px;
+  margin-left: 5%;
+}
+
+.header_wrap .loginbox .user {
+  font-size: 20px;
+}
+
+.header_wrap .loginbox span {
+  width: 3px;
+  height: 20px;
+  background: #707070;
+}
+
+.header_wrap .loginbox h4 {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.header_wrap .loginbox h4:hover {
+  text-decoration: underline;
+}
+
+.header_wrap .shopping_cart {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5%;
+  cursor: pointer;
+  position: relative;
+  background: #f1f3f4;
+}
+
+.header_wrap .shopping_cart:hover {
+  background: var(--main-color);
+  color: #fff;
+  border: none;
+}
+
+.header_wrap .shopping_cart .cart {
+  font-size: 25px;
+}
+
+.header_wrap .shopping_cart span {
+  background: crimson;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: absolute;
+  padding: 5px 10px;
+  top: -5px;
+  left: 35px;
+  font-size: 13px;
+}
