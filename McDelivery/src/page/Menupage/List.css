@@ -9,12 +9,12 @@
   gap: 10px;
   margin-bottom: 20px;
   flex-wrap: wrap;
-  width: 1505px;
+  width: 1280px;
   justify-content: center;
 }
 
 .product_item {
-  width: 400px;
+  width: 300px;
   height: 450px;
   margin: 10px;
   padding: 10px;
@@ -24,24 +24,28 @@
   align-items: center;
   position: relative;
   border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .product_item img {
   width: 300px;
   height: 250px;
   position: absolute;
-  top: 180px;
+  top: 150px;
   transform: translateY(-50%);
+  /* border: 1px solid#f00; */
 }
 
 .product_item h3 {
-  margin-top: 300px;
+  margin-top: 280px;
   margin-bottom: 0;
+  font-size: 22px;
 }
 
 .product_item h4 {
   margin-top: 20px;
   margin-bottom: 0;
+  font-size: 20px;
 }
 
 .product_item button {
@@ -49,9 +53,9 @@
   background: var(--main-color);
   border: none;
   outline: none;
-  width: 120px;
+  width: 140px;
   height: 50px;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 700;
   border-radius: 10px;
   cursor: pointer;
@@ -64,7 +68,7 @@
 
 @keyframes animate {
   0% {
-    transform: scale(0.5);
+    transform: scale(0.7);
   }
   100% {
     transform: scale(1);

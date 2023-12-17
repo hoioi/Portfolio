@@ -5,8 +5,12 @@
   align-items: center;
   position: fixed;
   top: 0px;
-  background: #fff;
+  background: transparent;
   z-index: 100;
+}
+
+.header_wrap.scrolled {
+  background: #fff;
 }
 
 .header_wrap .loginbox {

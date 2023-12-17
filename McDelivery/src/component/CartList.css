@@ -4,6 +4,7 @@
   right: 0;
   z-index: 999;
   transform: translateX(100%);
+  transition: transform 0.5s ease-in-out;
 }
 
 .cartlist_wrap.active {
@@ -15,6 +16,8 @@
   height: 100vh;
   background: var(--main_brown-color);
   position: relative;
+  overflow: scroll;
+  overflow-x: hidden;
 }
 
 .cartlist_btn {
@@ -32,6 +35,7 @@
   font-size: 20px;
   font-weight: 700;
   cursor: pointer;
+  border-radius: 10px;
 }
 
 .cartlist_btn .cartlist_closebtn {
