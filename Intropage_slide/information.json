@@ -1,0 +1,47 @@
+[
+  {
+    "name": "더블 비프 미트칠리 버거",
+    "en_name": "Double Beef Meat Chili Burger",
+    "img": "./imgs/Double_beef_meat_chillie_burger.png",
+    "content_text": "진한 고기맛 살리는 미트칠리 소스에 상큼한 사워크림,<br />순쇠고기 100% 패티 2장과 짭조롬한 치즈와 베이컨까지!<br />연말엔 더블 비프 미트칠리 버거!",
+    "L_price": 10900,
+    "M_price": 10200,
+    "S_price": 8300
+  },
+  {
+    "name": "미트칠리 비엘티 버거",
+    "en_name": "Meat Chili BLT Burger",
+    "img": "./imgs/Meat_Chili_BLT_Burger.png",
+    "content_text": "진한 고기맛 살리는 미트칠리 소스에 상큼한 사워크림,<br />신선한 양상추와 토마토까지!<br />미트칠리 BLT 버거",
+    "L_price": 10400,
+    "M_price": 9700,
+    "S_price": 7800
+  },
+  {
+    "name": "맥크리스피™ 디럭스 버거",
+    "en_name": "McCrispy™ Deluxe Burger",
+    "img": "./imgs/Maccrispy_Deluxe_Burger.png",
+    "content_text": "100% 통닭다리살 겉바속촉 케이준 치킨 패티,<br />촉촉한 포테이토 브리오쉬 번, 스페셜 스모키 소스가<br />선사하는 놀랍도록 새로운 맛의 치킨 버거!",
+    "L_price": 9900,
+    "M_price": 9200,
+    "S_price": 7600
+  },
+  {
+    "name": "맥크리스피™ 클래식 버거",
+    "en_name": "McCrispy™ Classic Burger",
+    "img": "./imgs/Maccrispy_Classic_Burger.png",
+    "content_text": "100% 통닭다리살 겉바속촉 케이준 치킨 패티!<br />치킨 버거 본연의 맛에 충실한 클래식 버거",
+    "L_price": 9400,
+    "M_price": 8700,
+    "S_price": 6700
+  },
+  {
+    "name": "트리플 치즈 버거",
+    "en_name": "Triple Cheeseburger",
+    "img": "./imgs/Triple_cheeseburger.png",
+    "content_text": "부드러운 치즈와 풍부한 육즙의 패티를<br />세배 더 진하게 즐길 수 있는 트리플 치즈버거",
+    "L_price": 9200,
+    "M_price": 8500,
+    "S_price": 6600
+  }
+]
