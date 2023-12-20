@@ -1,5 +1,6 @@
 .menu_wrap {
   width: 1920px;
+  overflow-x: hidden;
 }
 
 .menu_container {

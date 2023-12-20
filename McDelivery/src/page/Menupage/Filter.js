@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Filter.css";
+import { Link } from "react-router-dom";
 
 const Filter = ({ onCategoryChange, onSearchChange }) => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -18,10 +19,12 @@ const Filter = ({ onCategoryChange, onSearchChange }) => {
 
   return (
     <div className="filter_wrap">
-      <div className="logo">
-        <div className="logoimg"></div>
-        <h1>McDelivery</h1>
-      </div>
+      <Link to="/" style={{ textDecoration: "none", color: "#000" }}>
+        <div className="logo">
+          <div className="logoimg"></div>
+          <h1>McDelivery</h1>
+        </div>
+      </Link>
       <input
         className="search"
         type="text"

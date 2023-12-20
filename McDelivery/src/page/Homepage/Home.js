@@ -1,11 +1,15 @@
 import React, { useState, useEffect } from "react";
+import styled from "styled-components";
 import Header from "../../component/header/Header";
-import List from "./List";
 import CartList from "../../component/CartList";
 import About from "../../component/About";
-import "./Menu.css";
+import RecommendMenu from "./RecommendMenu";
+import "./Home.css";
 
-const Menu = () => {
+const Home = () => {
+  const Wrap = styled.div``;
+  const Container = styled.div``;
+
   const [isCartListActive, setIsCartListActive] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(null);
 
@@ -61,16 +65,15 @@ const Menu = () => {
   useEffect(() => {}, [cartItemCount]);
 
   return (
-    <div className="menu_wrap">
-      <div className="menu_container">
-        <div className="circle"></div>
+    <Wrap>
+      <Container>
         <Header
           onCartIconClick={handleCartIconClick}
           isCartListActive={isCartListActive}
           cartItemCount={cartItemCount}
           setCartItemCount={setCartItemCount}
         />
-        <List onProductClick={handleProductClick} />
+
         {isCartListActive && (
           <CartList
             onClose={handleCloseCartList}
@@ -86,9 +89,10 @@ const Menu = () => {
             onAddToCart={handleAddToCart}
           />
         )}
-      </div>
-    </div>
+        <RecommendMenu onProductClick={handleProductClick} />
+      </Container>
+    </Wrap>
   );
 };
 
-export default Menu;
+export default Home;

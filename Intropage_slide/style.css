@@ -84,11 +84,6 @@ button {
   left: 500px;
 }
 
-.container .itemBox .item .detail {
-  opacity: 0;
-  pointer-events: none;
-}
-
 .container .itemBox .item .intro {
   position: absolute;
   top: 50%;

@@ -70,7 +70,10 @@ const About = ({ product, onClose, onAddToCart, onAddToCartInCartList }) => {
       name: product.name,
       type: selectedType,
       quantity: quantity,
-      image: selectedType === "set" ? product.M_img : product.S_img,
+      image: selectedType === "small" ? product.S_img : product.M_img,
+      S_price: product.S_price,
+      M_price: product.M_price,
+      L_price: product.L_price,
     };
 
     onAddToCart(item);

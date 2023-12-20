@@ -3,7 +3,7 @@ export let products = [
     id: 1,
     name: "더블 비프 미트칠리 버거",
     en_name: "Double Beef Meat Chili Burger",
-    data_type: "recommended_menu burger&set",
+    data_type: "recommended_menu burger&set main",
     content_text:
       "진한 고기맛 살리는 미트칠리 소스에 상큼한 사워크림,<br />순쇠고기 100% 패티 2장과 짭조롬한 치즈와 베이컨까지!<br />연말엔 더블 비프 미트칠리 버거!",
     M_img:
@@ -29,7 +29,7 @@ export let products = [
     id: 2,
     name: "미트칠리 비엘티 버거",
     en_name: "Meat Chili BLT Burger",
-    data_type: "recommended_menu burger&set",
+    data_type: "recommended_menu burger&set main",
     content_text:
       "진한 고기맛 살리는 미트칠리 소스에 상큼한 사워크림,<br />신선한 양상추와 토마토까지!<br />미트칠리 BLT 버거",
     M_img: "./menu_imgs/buger_imgs/set_menu/Meat_Chili_BLT_Burger.png",
@@ -103,7 +103,7 @@ export let products = [
     id: 5,
     name: "맥크리스피™ 디럭스 버거",
     en_name: "McCrispy™ Deluxe Burger",
-    data_type: "recommended_menu burger&set",
+    data_type: "recommended_menu burger&set main",
     content_text:
       "100% 통닭다리살 겉바속촉 케이준 치킨 패티,<br />촉촉한 포테이토 브리오쉬 번, 스페셜 스모키 소스가<br />선사하는 놀랍도록 새로운 맛의 치킨 버거!",
     M_img: "./menu_imgs/buger_imgs/set_menu/Maccrispy_Deluxe_Burger.png",
@@ -127,7 +127,7 @@ export let products = [
     id: 6,
     name: "맥크리스피™ 클래식 버거",
     en_name: "McCrispy™ Classic Burger",
-    data_type: "recommended_menu burger&set",
+    data_type: "recommended_menu burger&set main",
     content_text:
       "100% 통닭다리살 겉바속촉 케이준 치킨 패티!<br />치킨 버거 본연의 맛에 충실한 클래식 버거",
     M_img: "./menu_imgs/buger_imgs/set_menu/Maccrispy_Classic_Burger.png",
@@ -175,7 +175,7 @@ export let products = [
     id: 8,
     name: "트리플 치즈 버거",
     en_name: "Triple Cheeseburger",
-    data_type: "burger&set",
+    data_type: "burger&set main",
     content_text:
       "부드러운 치즈와 풍부한 육즙의 패티를<br />세배 더 진하게 즐길 수 있는 트리플 치즈버거",
     M_img: "./menu_imgs/buger_imgs/set_menu/Triple_cheeseburger.png",
@@ -603,6 +603,7 @@ export let products = [
     data_type: "snak&side",
     content_text:
       "바삭하고 촉촉한 치킨이 한 입에 쏙!<br />다양한 소스로 입맛에 맞게 즐겨보세요!",
+    S_img: "./menu_imgs/snack_side/McNugget_6piece.png",
     M_img: "./menu_imgs/snack_side/McNugget_6piece.png",
     L_price: 8000,
     M_price: 7300,

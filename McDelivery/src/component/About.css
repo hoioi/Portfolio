@@ -36,7 +36,7 @@
 }
 
 .About_container::-webkit-scrollbar-track {
-  background: rgba(33, 122, 244, 0.1); /*스크롤바 뒷 배경 색상*/
+  background: rgba(33, 122, 244, 0.1);
 }
 
 .About_container .xmark {
@@ -98,8 +98,7 @@
 }
 
 .About_container .number_btn button:hover {
-  background: #fff;
-  color: var(--main-color);
+  color: #fff;
 }
 
 .About_container .type_button {

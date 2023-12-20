@@ -7,6 +7,8 @@
   top: 0px;
   background: transparent;
   z-index: 100;
+  border: 1px solid#f00;
+  height: 80px;
 }
 
 .header_wrap.scrolled {
@@ -18,8 +20,13 @@
   align-items: center;
   gap: 20px;
   color: #707070;
-  width: 500px;
+  width: 600px;
   margin-left: 5%;
+}
+
+.header_wrap .loginbox .logo_img {
+  width: 40px;
+  margin-right: 20px;
 }
 
 .header_wrap .loginbox .user {
