@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./RecommendMenu.css";
 import styled from "styled-components";
 import { products } from "../../Information";
@@ -7,14 +7,15 @@ import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
 const Wrap = styled.div`
   width: 100%;
-  height: 540px;
-  border: 1px solid #f00;
-  margin-top: 80px;
+  height: 620px;
   background: var(--main-color);
   position: relative;
 `;
 
-const Menubox = styled.div``;
+const Menubox = styled.div`
+  position: relative;
+  margin-top: 80px;
+`;
 
 const Menuitem = styled.div`
   width: 1050px;
@@ -163,7 +164,7 @@ const SubTextBox = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
-  top: 15%;
+  top: 150px;
 `;
 
 const SubText = styled.h1`
@@ -185,6 +186,32 @@ const RecommendMenu = ({ onProductClick }) => {
     product.data_type.includes("main")
   );
 
+  const [sliderClass, setSliderClass] = useState("");
+
+  const showSlider = (type) => {
+    const menuItems = document.querySelector(".Menuitems");
+    const firstItem = document.querySelector(".Menuitem:first-child");
+    const lastItem = document.querySelector(".Menuitem:last-child");
+
+    if (type === "next") {
+      // 다음 슬라이드 표시
+      setSliderClass("next");
+      lastItem.after(firstItem.cloneNode(true));
+      firstItem.remove();
+      menuItems.classList.remove("next", "prev");
+    } else if (type === "prev") {
+      // 이전 슬라이드 표시
+      setSliderClass("prev");
+      firstItem.before(lastItem.cloneNode(true));
+      lastItem.remove();
+      menuItems.classList.remove("next", "prev");
+    }
+
+    setTimeout(() => {
+      setSliderClass("");
+    }, 2000);
+  };
+
   const handleOrder = (product) => {
     onProductClick(product);
   };
@@ -196,9 +223,9 @@ const RecommendMenu = ({ onProductClick }) => {
         <BigSubText>추천메뉴</BigSubText>
         <SubText>버거</SubText>
       </SubTextBox>
-      <Menubox className="Menuitems">
+      <Menubox className={`Menuitems ${sliderClass}`}>
         {recommendedMenu.map((main, index) => (
-          <Menuitem key={main.id} style={{ zIndex: index === 0 ? "1" : "0" }}>
+          <Menuitem key={main.id} className="Menuitem">
             <MenuImg src={`images/${main.M_img}`} alt={main.name} />
             <Textbox className="Textbox">
               <Titlename>{main.name}</Titlename>
@@ -218,10 +245,10 @@ const RecommendMenu = ({ onProductClick }) => {
         ))}
       </Menubox>
       <Arrows>
-        <Prev className="prevButton">
+        <Prev className="prevButton" onClick={() => showSlider("prev")}>
           <FontAwesomeIcon icon={faAngleLeft} className="prev" />
         </Prev>
-        <Next className="nextButton">
+        <Next className="nextButton" onClick={() => showSlider("next")}>
           <FontAwesomeIcon icon={faAngleRight} className="next" />
         </Next>
       </Arrows>

@@ -4,12 +4,19 @@ import Header from "../../component/header/Header";
 import CartList from "../../component/CartList";
 import About from "../../component/About";
 import RecommendMenu from "./RecommendMenu";
+import Promotion from "./Promotion";
+import Footer from "../../component/Footer";
 import "./Home.css";
 
+const Wrap = styled.div`
+  width: 1920px;
+`;
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
 const Home = () => {
-  const Wrap = styled.div``;
-  const Container = styled.div``;
-
   const [isCartListActive, setIsCartListActive] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(null);
 
@@ -90,6 +97,8 @@ const Home = () => {
           />
         )}
         <RecommendMenu onProductClick={handleProductClick} />
+        <Promotion />
+        <Footer />
       </Container>
     </Wrap>
   );
