@@ -5,7 +5,12 @@ import CartList from "../CartList";
 import "./Header.css";
 import { Link } from "react-router-dom";
 
-const Header = ({ onCartIconClick, cartItemCount, setCartItemCount }) => {
+const Header = ({
+  onCartIconClick,
+  cartItemCount,
+  setCartItemCount,
+  onLogin,
+}) => {
   const [scrolled, setScrolled] = useState(false);
 
   const [cartItems, setCartItems] = useState([]);
@@ -41,15 +46,16 @@ const Header = ({ onCartIconClick, cartItemCount, setCartItemCount }) => {
         </Link>
         <FontAwesomeIcon icon={faUser} className="user" />
         <span></span>
-        <h4>로그인</h4>
+
+        <h4 onClick={onLogin}>로그인</h4>
+
         <span></span>
         <Link to="/Menu" style={{ textDecoration: "none", color: "#707070" }}>
           <h4 className="menuLink">메뉴</h4>
         </Link>
+
         <span></span>
-        <h4>마이페이지</h4>
-        <span></span>
-        <h4>기타정보</h4>
+        <h4>개인정보 처리방침</h4>
       </div>
       <div className="shopping_cart" onClick={onCartIconClick}>
         <FontAwesomeIcon icon={faCartShopping} className="cart" />

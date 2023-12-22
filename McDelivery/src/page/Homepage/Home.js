@@ -6,6 +6,7 @@ import About from "../../component/About";
 import RecommendMenu from "./RecommendMenu";
 import Promotion from "./Promotion";
 import Footer from "../../component/Footer";
+import Login from "../../component/Login";
 import "./Home.css";
 
 const Wrap = styled.div`
@@ -23,12 +24,22 @@ const Home = () => {
   const [cartItemCount, setCartItemCount] = useState(0);
   const [cartItems, setCartItems] = useState([]);
 
+  const [ActiveLogin, setActiveLogin] = useState(false);
+
   const handleCartIconClick = () => {
     setIsCartListActive(true);
   };
 
   const handleCloseCartList = () => {
     setIsCartListActive(false);
+  };
+
+  const onLogin = () => {
+    setActiveLogin(true);
+  };
+
+  const offLogin = () => {
+    setActiveLogin(false);
   };
 
   const handleProductClick = (product) => {
@@ -74,11 +85,14 @@ const Home = () => {
   return (
     <Wrap>
       <Container>
+        {ActiveLogin && <Login offLogin={offLogin} />}
+
         <Header
           onCartIconClick={handleCartIconClick}
           isCartListActive={isCartListActive}
           cartItemCount={cartItemCount}
           setCartItemCount={setCartItemCount}
+          onLogin={onLogin}
         />
 
         {isCartListActive && (

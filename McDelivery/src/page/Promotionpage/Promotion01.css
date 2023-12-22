@@ -1,0 +1,13 @@
+* {
+  font-size: 10px;
+}
+
+.homeButton {
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 1280px) {
+  * {
+    font-size: 6px;
+  }
+}

@@ -31,6 +31,11 @@ const PromotionBox = styled.div`
   height: 438px;
   border-radius: 10px;
   box-shadow: 0 10px 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    transform: translateY(-20px);
+  }
 `;
 
 const PromotionImg = styled.img`
