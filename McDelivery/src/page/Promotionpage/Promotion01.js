@@ -11,9 +11,12 @@ import "./Promotion01.css";
 const Promotion01Wrap = styled.div`
   width: 1920px;
 
-  // @media screen and (max-width: 1280px) {
-  //   width: 1280px;
-  // }
+  @media screen and (max-width: 1280px) {
+    width: 1280px;
+  }
+  @media screen and (max-width: 480px) {
+    width: 480px;
+  }
 `;
 const Promotion01Container = styled.div`
   display: flex;
@@ -26,11 +29,22 @@ const Promotion01Banner = styled.div`
   height: 220px;
   position: relative;
   margin-top: 80px;
+  @media screen and (max-width: 1280px) {
+    height: 180px;
+  }
+  @media screen and (max-width: 480px) {
+    height: 140px;
+  }
 `;
 
-const Promotion01BannerImg = styled.div`
-  background: url("/images/promotion_imgs/banner.jpg") no-repeat center center;
-  background-size: cover;
+const Promotion01BannerWrap = styled.div`
+  // background: url("/images/promotion_imgs/banner.jpg") no-repeat center center;
+  // background-size: cover;
+  width: 100%;
+  height: 100%;
+`;
+
+const Promotion01BannerImg = styled.img`
   width: 100%;
   height: 100%;
   z-index: 2;
@@ -48,7 +62,7 @@ const Promotion01BannerBlack = styled.div`
 const Promotion01BannerTextbox = styled.div`
   position: absolute;
   top: 5px;
-  left: 300px;
+  left: 15.63%;
   color: #fff;
   z-index: 10;
 `;
@@ -69,6 +83,10 @@ const Promotion01Section = styled.div`
   @media screen and (max-width: 1280px) {
     width: 600px;
   }
+
+  @media screen and (max-width: 480px) {
+    width: 300px;
+  }
 `;
 
 const Promotion01SectionImg = styled.img`
@@ -88,6 +106,18 @@ const Promotion01SectionOrder = styled.button`
   font-size: 6rem;
   font-weight: 700;
   cursor: pointer;
+  @media screen and (max-width: 1280px) {
+    width: 345px;
+    height: 75px;
+    top: 40.5%;
+  }
+  @media screen and (max-width: 480px) {
+    width: 175px;
+    height: 43px;
+    top: 42%;
+    font-size: 5rem;
+    font-weight: 900;
+  }
 `;
 
 const Promotion01SectionTopbox = styled.div`
@@ -131,6 +161,15 @@ const Promotion01SectionBottomBoxMenuButton = styled.button`
   font-size: 2rem;
   font-weight: 700;
   cursor: pointer;
+  @media screen and (max-width: 1280px) {
+    width: 130px;
+    height: 50px;
+  }
+  @media screen and (max-width: 480px) {
+    width: 100px;
+    height: 40px;
+    font-size: 2.5rem;
+  }
 `;
 
 const Promotion01SectionBottomBoxHomeButton = styled.button`
@@ -140,6 +179,14 @@ const Promotion01SectionBottomBoxHomeButton = styled.button`
   border: none;
   outline: none;
   cursor: pointer;
+  @media screen and (max-width: 1280px) {
+    width: 50px;
+    height: 50px;
+  }
+  @media screen and (max-width: 480px) {
+    width: 40px;
+    height: 40px;
+  }
 `;
 
 const Promotion01 = () => {
@@ -183,7 +230,8 @@ const Promotion01 = () => {
           />
         )}
         <Promotion01Banner>
-          <Promotion01BannerImg>
+          <Promotion01BannerWrap>
+            <Promotion01BannerImg src="/images/promotion_imgs/banner.jpg" />
             <Promotion01BannerBlack />
             <Promotion01BannerTextbox>
               <Promotion01BannerTitle>맥도날드 프로모션</Promotion01BannerTitle>
@@ -194,7 +242,7 @@ const Promotion01 = () => {
                 </Promotion01BannerSubText>
               </Promotion01BannerSubTextbox>
             </Promotion01BannerTextbox>
-          </Promotion01BannerImg>
+          </Promotion01BannerWrap>
         </Promotion01Banner>
         <Promotion01Section>
           <Promotion01SectionTopbox>

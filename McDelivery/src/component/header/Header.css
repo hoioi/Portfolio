@@ -1,3 +1,7 @@
+* {
+  font-size: 10px;
+}
+
 .header_wrap {
   width: 100%;
   display: flex;
@@ -29,7 +33,7 @@
 }
 
 .header_wrap .loginbox .user {
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 .header_wrap .loginbox span {
@@ -67,7 +71,7 @@
 }
 
 .header_wrap .shopping_cart .cart {
-  font-size: 25px;
+  font-size: 2.5rem;
 }
 
 .header_wrap .shopping_cart span {
