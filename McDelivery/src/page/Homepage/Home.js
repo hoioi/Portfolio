@@ -10,7 +10,13 @@ import Login from "../../component/Login";
 import "./Home.css";
 
 const Wrap = styled.div`
-  width: 1920px;
+  width: 100wv;
+  @media screen and (max-width: 1280px) {
+    width: 100wv;
+  }
+  @media screen and (max-width: 480px) {
+    width: 100wv;
+  }
 `;
 const Container = styled.div`
   display: flex;

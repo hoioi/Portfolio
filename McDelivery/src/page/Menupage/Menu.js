@@ -3,6 +3,7 @@ import Header from "../../component/header/Header";
 import List from "./List";
 import CartList from "../../component/CartList";
 import About from "../../component/About";
+import Footer from "../../component/Footer";
 import "./Menu.css";
 
 const Menu = () => {
@@ -86,6 +87,7 @@ const Menu = () => {
             onAddToCart={handleAddToCart}
           />
         )}
+        <Footer />
       </div>
     </div>
   );

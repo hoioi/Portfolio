@@ -156,6 +156,7 @@ const CartList = ({
           <button className="cartlist_closebtn" onClick={onClose}>
             닫기
           </button>
+
           <button className="cartlist_order">주문하기</button>
         </div>
       </div>

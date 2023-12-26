@@ -7,6 +7,12 @@ import { Link } from "react-router-dom";
 const PromotionWrap = styled.div`
   width: 1280px;
   margin-top: 50px;
+  @media screen and (max-width: 1280px) {
+    width: 940px;
+  }
+  @media screen and (max-width: 480px) {
+    width: 360px;
+  }
 `;
 
 const PromotionContainer = styled.div`
@@ -17,6 +23,9 @@ const TitlePromotion = styled.h1`
   font-weight: 900;
   font-size: 60px;
   margin: 20px 0 0 0;
+  @media screen and (max-width: 480px) {
+    font-size: 40px;
+  }
 `;
 
 const PromotionBoxs = styled.div`
@@ -24,6 +33,12 @@ const PromotionBoxs = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  @media screen and (max-width: 1280px) {
+  }
+  @media screen and (max-width: 480px) {
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 const PromotionBox = styled.div`
@@ -36,10 +51,16 @@ const PromotionBox = styled.div`
   &:hover {
     transform: translateY(-20px);
   }
+  @media screen and (max-width: 1280px) {
+  }
+  @media screen and (max-width: 480px) {
+    width: 98%;
+    height: 438px;
+  }
 `;
 
 const PromotionImg = styled.img`
-  width: 366px;
+  width: 100%;
   height: 300px;
   border-radius: 10px;
 `;
@@ -49,6 +70,9 @@ const PromotionName = styled.h1`
   margin: 0;
   line-height: 15px;
   text-decoration: none;
+  @media screen and (max-width: 480px) {
+    line-height: 30px;
+  }
 `;
 
 const PromotionNameBox = styled.div`

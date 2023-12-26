@@ -1,16 +1,14 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import Header from "../../component/header/Header";
+import Login from "../../component/Login";
 import CartList from "../../component/CartList";
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import Footer from "../../component/Footer";
 import "./Promotion01.css";
 
 const Promotion01Wrap = styled.div`
   width: 1920px;
-
   @media screen and (max-width: 1280px) {
     width: 1280px;
   }
@@ -172,26 +170,10 @@ const Promotion01SectionBottomBoxMenuButton = styled.button`
   }
 `;
 
-const Promotion01SectionBottomBoxHomeButton = styled.button`
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  @media screen and (max-width: 1280px) {
-    width: 50px;
-    height: 50px;
-  }
-  @media screen and (max-width: 480px) {
-    width: 40px;
-    height: 40px;
-  }
-`;
-
 const Promotion01 = () => {
   const [isCartListActive, setIsCartListActive] = useState(false);
   const [cartItemCount, setCartItemCount] = useState(0);
+  const [ActiveLogin, setActiveLogin] = useState(false);
 
   const [cartItems, setCartItems] = useState([]);
 
@@ -201,6 +183,14 @@ const Promotion01 = () => {
 
   const handleCloseCartList = () => {
     setIsCartListActive(false);
+  };
+
+  const onLogin = () => {
+    setActiveLogin(true);
+  };
+
+  const offLogin = () => {
+    setActiveLogin(false);
   };
 
   const handleRemoveFromCart = (itemId) => {
@@ -215,11 +205,13 @@ const Promotion01 = () => {
   return (
     <Promotion01Wrap>
       <Promotion01Container>
+        {ActiveLogin && <Login offLogin={offLogin} />}
         <Header
           onCartIconClick={handleCartIconClick}
           isCartListActive={isCartListActive}
           cartItemCount={cartItemCount}
           setCartItemCount={setCartItemCount}
+          onLogin={onLogin}
         />
         {isCartListActive && (
           <CartList
@@ -259,12 +251,11 @@ const Promotion01 = () => {
           </Link>
           <Promotion01SectionBottomLine />
           <Promotion01SectionBottomBox>
-            <Promotion01SectionBottomBoxMenuButton>
-              목록보기
-            </Promotion01SectionBottomBoxMenuButton>
-            <Promotion01SectionBottomBoxHomeButton>
-              <FontAwesomeIcon icon={faAngleRight} className="homeButton" />
-            </Promotion01SectionBottomBoxHomeButton>
+            <Link to="/">
+              <Promotion01SectionBottomBoxMenuButton>
+                목록보기
+              </Promotion01SectionBottomBoxMenuButton>
+            </Link>
           </Promotion01SectionBottomBox>
         </Promotion01Section>
         <Footer />

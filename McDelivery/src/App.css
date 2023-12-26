@@ -18,3 +18,15 @@
   flex-direction: column;
   justify-content: center;
 }
+
+@media screen and (max-width: 1280px) {
+  .wrap {
+    width: 1280px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .wrap {
+    width: 480px;
+  }
+}

@@ -8,6 +8,7 @@ import Promotion03 from "./page/Promotionpage/Promotion03";
 import Promotion04 from "./page/Promotionpage/Promotion04";
 import Promotion05 from "./page/Promotionpage/Promotion05";
 import Promotion06 from "./page/Promotionpage/Promotion06";
+import Protection from "./page/Protectionpage/Protection";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/promotion04" element={<Promotion04 />} />
           <Route path="/promotion05" element={<Promotion05 />} />
           <Route path="/promotion06" element={<Promotion06 />} />
+          <Route path="/Protection" element={<Protection />} />
         </Routes>
       </div>
     </div>

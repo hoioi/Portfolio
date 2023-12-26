@@ -21,3 +21,24 @@
   border-radius: 50%;
   z-index: -1;
 }
+
+@media screen and (max-width: 1280px) {
+  .menu_wrap {
+    width: 1280px;
+  }
+
+  .menu_container .circle {
+    width: 700px;
+    height: 700px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .menu_wrap {
+    width: 480px;
+  }
+  .menu_container .circle {
+    width: 580px;
+    height: 580px;
+  }
+}

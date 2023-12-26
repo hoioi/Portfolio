@@ -19,22 +19,25 @@ const FooterContainer = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+  padding: 0 100px;
 `;
 
 const FooterTitle = styled.h1`
-  font-size: 15px;
+  font-size: 1.5rem;
   color: #ccc;
   margin: 0;
+  display: flex;
+  flex-wrap: wrap;
 `;
 
 const FooterSubBox = styled.div``;
 const FooterSub01 = styled.p`
-  font-size: 15px;
+  font-size: 1.5rem;
   color: #ccc;
   margin: 0;
 `;
 const FooterSub02 = styled.p`
-  font-size: 15px;
+  font-size: 1.5rem;
   color: #ccc;
   margin: 0;
 `;

@@ -27,10 +27,18 @@ const LoginContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 300;
+  @media screen and (max-width: 480px) {
+    width: 300px;
+    height: 500px;
+  }
 `;
 
 const LoginImg = styled.img`
   margin-top: 50px;
+  @media screen and (max-width: 480px) {
+    width: 50px;
+  }
 `;
 
 const LoginTitle = styled.h1`
@@ -75,6 +83,9 @@ const LoginStart = styled.button`
   cursor: pointer;
   border: none;
   border-radius: 20px;
+  @media screen and (max-width: 480px) {
+    margin: 40px 0 0 0;
+  }
 `;
 const Login = ({ offLogin }) => {
   return (
