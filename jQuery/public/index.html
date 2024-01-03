@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery</title>
+    <!--jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--magnific popup js cdn link-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+    />
+    <!--custom-->
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <div class="gallery">
+      <ul class="controls">
+        <li class="buttons" data-filter="all">all</li>
+        <li class="buttons" data-filter="mammal">포유류</li>
+        <li class="buttons" data-filter="birds">조류</li>
+        <li class="buttons" data-filter="reptile">파충류</li>
+        <li class="buttons" data-filter="amphibian">양서류</li>
+        <li class="buttons" data-filter="fish">어류</li>
+      </ul>
+      <div class="image-container">
+        <a href="./imgs/tiger.jpg" class="image mammal">
+          <img src="./imgs/tiger.jpg" />
+        </a>
+        <a href="./imgs/blowfish.jpg" class="image fish">
+          <img src="./imgs/blowfish.jpg" />
+        </a>
+        <a href="./imgs/cat.jpg" class="image mammal">
+          <img src="./imgs/cat.jpg" />
+        </a>
+        <a href="./imgs/chick.png" class="image birds">
+          <img src="./imgs/chick.png" />
+        </a>
+        <a href="./imgs/clownfish.jpg" class="image fish">
+          <img src="./imgs/clownfish.jpg" />
+        </a>
+        <a href="./imgs/crocodile.jpg" class="image amphibian">
+          <img src="./imgs/crocodile.jpg" />
+        </a>
+        <a href="./imgs/dolphin.jpg" class="image mammal">
+          <img src="./imgs/dolphin.jpg" />
+        </a>
+        <a href="./imgs/elephant.jpg" class="image mammal">
+          <img src="./imgs/elephant.jpg" />
+        </a>
+        <a href="./imgs/falcon.jpeg" class="image birds">
+          <img src="./imgs/falcon.jpeg" />
+        </a>
+        <a href="./imgs/frog.jpg" class="image amphibian">
+          <img src="./imgs/frog.jpg" />
+        </a>
+        <a href="./imgs/lizard.png" class="image reptile">
+          <img src="./imgs/lizard.png" />
+        </a>
+        <a href="./imgs/snake.jpg" class="image reptile">
+          <img src="./imgs/snake.jpg" />
+        </a>
+        <a href="./imgs/sparrow.jpg" class="image birds">
+          <img src="./imgs/sparrow.jpg" />
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

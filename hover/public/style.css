@@ -34,6 +34,7 @@ a {
 
 .container {
   position: relative;
+  transform: translateY(-100px);
 }
 
 .container h1 {
@@ -235,4 +236,13 @@ a {
   background-size: cover;
   margin-right: 50px;
   cursor: pointer;
+}
+
+.container .click {
+  font-size: 23px;
+  font-weight: 700;
+  color: #fff;
+  position: absolute;
+  top: 840px;
+  left: 42.6%;
 }
