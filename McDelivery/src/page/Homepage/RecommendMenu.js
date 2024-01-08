@@ -217,8 +217,7 @@ const SubTextBox = styled.div`
   align-items: center;
   text-align: center;
   top: 150px;
-  @media screen and (max-width: 1280px) {
-  }
+
   @media screen and (max-width: 480px) {
     display: none;
   }
@@ -229,10 +228,6 @@ const SubText = styled.h1`
   font-weight: 400;
   font-size: 8rem;
   margin: 0;
-  @media screen and (max-width: 1280px) {
-  }
-  @media screen and (max-width: 480px) {
-  }
 `;
 
 const BigSubText = styled.h2`
@@ -255,13 +250,11 @@ const RecommendMenu = ({ onProductClick }) => {
     const lastItem = document.querySelector(".Menuitem:last-child");
 
     if (type === "next") {
-      // 다음 슬라이드 표시
       setSliderClass("next");
       lastItem.after(firstItem.cloneNode(true));
       firstItem.remove();
       menuItems.classList.remove("next", "prev");
     } else if (type === "prev") {
-      // 이전 슬라이드 표시
       setSliderClass("prev");
       firstItem.before(lastItem.cloneNode(true));
       lastItem.remove();

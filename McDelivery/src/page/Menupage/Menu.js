@@ -26,14 +26,10 @@ const Menu = () => {
   };
 
   const showNotification = (productName) => {
-    // 브라우저에서 Notification 지원 여부 확인
     if ("Notification" in window) {
-      // 사용자에게 Notification 허용 여부 확인
       if (Notification.permission === "granted") {
-        // Notification 생성
         new Notification(`${productName}이(가) 장바구니에 추가되었습니다.`);
       } else if (Notification.permission !== "denied") {
-        // Notification 권한 요청
         Notification.requestPermission().then((permission) => {
           if (permission === "granted") {
             new Notification(`${productName}이(가) 장바구니에 추가되었습니다.`);

@@ -33,8 +33,7 @@ const PromotionBoxs = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  @media screen and (max-width: 1280px) {
-  }
+
   @media screen and (max-width: 480px) {
     justify-content: center;
     align-items: center;
@@ -51,8 +50,7 @@ const PromotionBox = styled.div`
   &:hover {
     transform: translateY(-20px);
   }
-  @media screen and (max-width: 1280px) {
-  }
+
   @media screen and (max-width: 480px) {
     width: 98%;
     height: 438px;

@@ -9,7 +9,6 @@ const CartList = ({
 }) => {
   const [cart, setCart] = useState(cartItems);
 
-  // LocalStorage에서 데이터 불러오기
   useEffect(() => {
     const storedCart = JSON.parse(localStorage.getItem("cartItems"));
     if (storedCart) {
@@ -17,17 +16,14 @@ const CartList = ({
     }
   }, []);
 
-  // LocalStorage에 데이터 저장하기
   useEffect(() => {
     localStorage.setItem("cartItems", JSON.stringify(cart));
   }, [cart]);
 
-  // Helper 함수: 각 아이템의 가격을 계산
   const calculateItemPrice = (item) => {
     let basePrice;
 
     if (item.type) {
-      // 각 사이즈에 따라 가격을 선택
       switch (item.type) {
         case "large_set":
           basePrice = item.L_price;
@@ -42,11 +38,9 @@ const CartList = ({
           basePrice = 0;
       }
     } else {
-      // 'data_type'이 정의되어 있지 않으면 기본값 설정
       basePrice = 0;
     }
 
-    // 선택된 수량만큼 가격 계산
     const totalItemPrice = basePrice * item.quantity;
     return totalItemPrice.toLocaleString();
   };
@@ -69,7 +63,6 @@ const CartList = ({
   };
 
   useEffect(() => {
-    // 외부에서 cartItems이 변경될 때마다 cart 상태 업데이트
     setCart(cartItems);
   }, [cartItems]);
 
@@ -97,7 +90,7 @@ const CartList = ({
         changeType === "decrease" &&
         updatedCart.find((item) => item.id === itemId)?.quantity === 0
       ) {
-        onRemoveFromCart(itemId); // 상품 수량이 0이면 완전히 삭제
+        onRemoveFromCart(itemId);
       }
 
       return filteredCart;

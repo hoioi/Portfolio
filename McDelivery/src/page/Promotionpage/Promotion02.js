@@ -37,8 +37,6 @@ const Promotion02Banner = styled.div`
 `;
 
 const Promotion02BannerWrap = styled.div`
-  // background: url("/images/promotion_imgs/banner.jpg") no-repeat center center;
-  // background-size: cover;
   width: 100%;
   height: 100%;
 `;
