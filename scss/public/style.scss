@@ -8,6 +8,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 10px;
 }
 
 .wrap {
@@ -37,7 +38,7 @@
     right: 60%;
     text-align: center;
     color: #fff;
-    font-size: 150px;
+    font-size: 15rem;
     width: 40%;
     text-shadow: 3px 5px 0 #000;
     transform: rotate(-5deg);
@@ -48,10 +49,11 @@
     top: 10%;
     left: 60%;
     text-align: justify;
-    width: 350px;
+    width: 400px;
+
     h1 {
       color: var(--main-color);
-      font-size: 30px;
+      font-size: 3rem;
     }
     .item {
       display: none;
@@ -60,17 +62,20 @@
         & h1 {
           opacity: 0;
           animation: showContent 0.5s ease-in-out 1 forwards;
+          font-size: 3rem;
         }
         & .des {
           & .subtext {
             opacity: 0;
             animation: showContent 0.5s 0.3s ease-in-out 1 forwards;
             margin-top: 30px;
+            font-size: 1.8rem;
           }
           & h3 {
             opacity: 0;
             animation: showContent 0.5s 0.7s ease-in-out 1 forwards;
             margin-top: 30px;
+            font-size: 1.5rem;
           }
           & .table {
             display: grid;
@@ -86,6 +91,7 @@
               display: grid;
               align-items: center;
               justify-content: center;
+              font-size: 1.5rem;
               &:nth-child(1) {
                 background: var(--main-color);
               }
@@ -122,7 +128,7 @@
   }
   & .images {
     position: absolute;
-    bottom: 0%;
+    bottom: -5%;
     left: 50%;
     --rotate: 0deg;
     transform: translate(-50%, 65%) rotate(var(--rotate));
@@ -132,6 +138,7 @@
     transition: transform 0.5s ease-in-out;
     outline: 3px dashed #fff5;
     outline-offset: -100px;
+
     & .item {
       position: absolute;
       width: 100%;
@@ -148,8 +155,8 @@
     position: absolute;
     border: none;
     top: 50%;
-    left: 250px;
-    font-size: 100px;
+    left: 10%;
+    font-size: 10rem;
     font-family: cursive;
     background-color: transparent;
     color: #fff;
@@ -159,10 +166,73 @@
   }
   & .next {
     left: unset;
-    right: 250px;
+    right: 10%;
   }
   & .next:hover,
   & .prev:hover {
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  * {
+    font-size: 6px;
+  }
+
+  .slider {
+    & .content {
+      width: 300px;
+      & .item {
+        &.active {
+          & .des {
+            & .table {
+              width: 300px;
+              grid-auto-rows: 40px;
+            }
+          }
+        }
+      }
+    }
+    & .images {
+      width: 1000px;
+      height: 1000px;
+      & .item {
+        & img {
+          height: 350px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  * {
+    font-size: 4px;
+  }
+
+  .slider {
+    & .content {
+      width: 180px;
+      left: 52%;
+      & .item {
+        &.active {
+          & .des {
+            & .table {
+              width: 180px;
+              grid-auto-rows: 40px;
+            }
+          }
+        }
+      }
+    }
+    & .images {
+      width: 700px;
+      height: 700px;
+      & .item {
+        & img {
+          height: 220px;
+        }
+      }
+    }
   }
 }

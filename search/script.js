@@ -9,6 +9,7 @@ fetch(url)
     const infoData = data;
     cars.forEach((car, i) => {
       let main_imgElement = car.querySelector(".main_img");
+      let main_img480Element = car.querySelector(".main_img480");
       let car_nameElement = car.querySelector(".car_name");
       let car_typeElement = car.querySelector(".car_type");
       let car_priceElement = car.querySelector(".car_price");
@@ -17,6 +18,7 @@ fetch(url)
       car_typeElement.innerHTML = infoData[i].car_type;
       car_priceElement.innerHTML = infoData[i].car_price;
       main_imgElement.style.backgroundImage = `url(${infoData[i].main_img})`;
+      main_img480Element.style.backgroundImage = `url(${infoData[i].main_img480})`;
     });
   });
 
@@ -83,6 +85,8 @@ let modal_mileage = document.querySelector(".modal_mileage");
 let modal_people = document.querySelector(".modal_people");
 let modal_displacement = document.querySelector(".modal_displacement");
 let rightboximg = document.querySelector(".rightbox");
+let rightboximg1280 = document.querySelector(".rightbox1280");
+let rightboximg480 = document.querySelector(".rightbox480");
 
 const url02 = "modal.json";
 fetch(url02)
@@ -101,6 +105,8 @@ fetch(url02)
         modal_people.innerHTML = infoData[j].people;
         modal_displacement.innerHTML = infoData[j].displacement;
         rightboximg.style.backgroundImage = `url(${infoData[j].imge})`;
+        rightboximg1280.style.backgroundImage = `url(${infoData[j].imge_1280})`;
+        rightboximg480.style.backgroundImage = `url(${infoData[j].imge_480})`;
       });
     });
   });

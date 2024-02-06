@@ -7,6 +7,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 10px;
 }
 
 .wrap {
@@ -37,7 +38,7 @@
   right: 60%;
   text-align: center;
   color: #fff;
-  font-size: 150px;
+  font-size: 15rem;
   width: 40%;
   text-shadow: 3px 5px 0 #000;
   transform: rotate(-5deg);
@@ -48,11 +49,11 @@
   top: 10%;
   left: 60%;
   text-align: justify;
-  width: 350px;
+  width: 400px;
 }
 .slider .content h1 {
   color: var(--main-color);
-  font-size: 30px;
+  font-size: 3rem;
 }
 .slider .content .item {
   display: none;
@@ -63,16 +64,19 @@
 .slider .content .item.active h1 {
   opacity: 0;
   animation: showContent 0.5s ease-in-out 1 forwards;
+  font-size: 3rem;
 }
 .slider .content .item.active .des .subtext {
   opacity: 0;
   animation: showContent 0.5s 0.3s ease-in-out 1 forwards;
   margin-top: 30px;
+  font-size: 1.8rem;
 }
 .slider .content .item.active .des h3 {
   opacity: 0;
   animation: showContent 0.5s 0.7s ease-in-out 1 forwards;
   margin-top: 30px;
+  font-size: 1.5rem;
 }
 .slider .content .item.active .des .table {
   display: grid;
@@ -89,6 +93,7 @@
   display: grid;
   align-items: center;
   justify-content: center;
+  font-size: 1.5rem;
 }
 .slider .content .item.active .des .table div:nth-child(1) {
   background: var(--main-color);
@@ -120,7 +125,7 @@
 }
 .slider .images {
   position: absolute;
-  bottom: 0%;
+  bottom: -5%;
   left: 50%;
   --rotate: 0deg;
   transform: translate(-50%, 65%) rotate(var(--rotate));
@@ -145,8 +150,8 @@
   position: absolute;
   border: none;
   top: 50%;
-  left: 250px;
-  font-size: 100px;
+  left: 10%;
+  font-size: 10rem;
   font-family: cursive;
   background-color: transparent;
   color: #fff;
@@ -156,8 +161,48 @@
 }
 .slider .next {
   left: unset;
-  right: 250px;
+  right: 10%;
 }
 .slider .next:hover, .slider .prev:hover {
   opacity: 1;
+}
+
+@media screen and (max-width: 1280px) {
+  * {
+    font-size: 6px;
+  }
+  .slider .content {
+    width: 300px;
+  }
+  .slider .content .item.active .des .table {
+    width: 300px;
+    grid-auto-rows: 40px;
+  }
+  .slider .images {
+    width: 1000px;
+    height: 1000px;
+  }
+  .slider .images .item img {
+    height: 350px;
+  }
+}
+@media screen and (max-width: 480px) {
+  * {
+    font-size: 4px;
+  }
+  .slider .content {
+    width: 180px;
+    left: 52%;
+  }
+  .slider .content .item.active .des .table {
+    width: 180px;
+    grid-auto-rows: 40px;
+  }
+  .slider .images {
+    width: 700px;
+    height: 700px;
+  }
+  .slider .images .item img {
+    height: 220px;
+  }
 }/*# sourceMappingURL=style.css.map */

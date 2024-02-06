@@ -6,7 +6,9 @@
     "mileage": "~6.2km/kWh",
     "people": "5명",
     "displacement": "-",
-    "imge": "./img_modal/hydrogen_ele/ioniq6.png"
+    "imge": "./img_modal/hydrogen_ele/ioniq6.png",
+    "imge_1280": "./img_modal/hydrogen_ele/ioniq61280.png",
+    "imge_480": "./img_modal/hydrogen_ele/ioniq6480.png"
   },
   {
     "subtitle": "Positive Energy, NEXO",
@@ -15,7 +17,9 @@
     "mileage": "~96.2km/kg",
     "people": "5명",
     "displacement": "-",
-    "imge": "./img_modal/hydrogen_ele/nexo.png"
+    "imge": "./img_modal/hydrogen_ele/nexo.png",
+    "imge_1280": "./img_modal/hydrogen_ele/nexo1280.png",
+    "imge_480": "./img_modal/hydrogen_ele/nexo480.png"
   },
   {
     "subtitle": "새로운 차원의 라이프",
@@ -24,7 +28,9 @@
     "mileage": "~5.5km/kWh",
     "people": "5명",
     "displacement": "-",
-    "imge": "./img_modal/hydrogen_ele/all-new-kona-electric.png"
+    "imge": "./img_modal/hydrogen_ele/all-new-kona-electric.png",
+    "imge_1280": "./img_modal/hydrogen_ele/all-new-kona-electric1280.png",
+    "imge_480": "./img_modal/hydrogen_ele/all-new-kona-electric480.png"
   },
   {
     "subtitle": "새로운 친환경 EV 트럭",
@@ -33,7 +39,9 @@
     "mileage": "~3.1km/kWh",
     "people": "3명",
     "displacement": "-",
-    "imge": "./img_modal/hydrogen_ele/porter2-electric.png"
+    "imge": "./img_modal/hydrogen_ele/porter2-electric.png",
+    "imge_1280": "./img_modal/hydrogen_ele/porter2-electric1280.png",
+    "imge_480": "./img_modal/hydrogen_ele/porter2-electric480.png"
   },
   {
     "subtitle": "Everyday N Life",
@@ -42,7 +50,9 @@
     "mileage": "~3.7km/kWh",
     "people": "5명",
     "displacement": "-",
-    "imge": "./img_modal/N/ioniq5-n.png"
+    "imge": "./img_modal/N/ioniq5-n.png",
+    "imge_1280": "./img_modal/N/ioniq5-n1280.png",
+    "imge_480": "./img_modal/N/ioniq5-n480.png"
   },
   {
     "subtitle": "Never just drive",
@@ -51,7 +61,9 @@
     "mileage": "~10.6km/l",
     "people": "5명",
     "displacement": "~1,988cc",
-    "imge": "./img_modal/N/the-new-avante-n.png"
+    "imge": "./img_modal/N/the-new-avante-n.png",
+    "imge_1280": "./img_modal/N/the-new-avante-n1280.png",
+    "imge_480": "./img_modal/N/the-new-avante-n480.png"
   },
   {
     "subtitle": "지금, 더 매력적인 AVANTE",
@@ -60,7 +72,9 @@
     "mileage": "~15.3km/l",
     "people": "5명",
     "displacement": "~1,598cc",
-    "imge": "./img_modal/sedan/the-new-avante.png"
+    "imge": "./img_modal/sedan/the-new-avante.png",
+    "imge_1280": "./img_modal/sedan/the-new-avante1280.png",
+    "imge_480": "./img_modal/sedan/the-new-avante480.png"
   },
   {
     "subtitle": "지금, 더 매력적인 AVANTE",
@@ -69,7 +83,9 @@
     "mileage": "~21.1km/l",
     "people": "5명",
     "displacement": "~1,580cc",
-    "imge": "./img_modal/sedan/the-new-avante-hybrid.png"
+    "imge": "./img_modal/sedan/the-new-avante-hybrid.png",
+    "imge_1280": "./img_modal/sedan/the-new-avante-hybrid1280.png",
+    "imge_480": "./img_modal/sedan/the-new-avante-hybrid480.png"
   },
   {
     "subtitle": "SONATA The Edge",
@@ -78,7 +94,9 @@
     "mileage": "~13.5km/l",
     "people": "5명",
     "displacement": "~1,999cc",
-    "imge": "./img_modal/sedan/sonata-the-edge.png"
+    "imge": "./img_modal/sedan/sonata-the-edge.png",
+    "imge_1280": "./img_modal/sedan/sonata-the-edge1280.png",
+    "imge_480": "./img_modal/sedan/sonata-the-edge480.png"
   },
   {
     "subtitle": "Outclass GRANDEUR",
@@ -87,7 +105,9 @@
     "mileage": "~11.7km/l",
     "people": "5명",
     "displacement": "~3,470cc",
-    "imge": "./img_modal/sedan/all-new-grandeur.png"
+    "imge": "./img_modal/sedan/all-new-grandeur.png",
+    "imge_1280": "./img_modal/sedan/all-new-grandeur1280.png",
+    "imge_480": "./img_modal/sedan/all-new-grandeur480.png"
   },
   {
     "subtitle": "Outclass GRANDEUR Hybrid",
@@ -96,7 +116,9 @@
     "mileage": "~18.0km/l",
     "people": "5명",
     "displacement": "~1,598cc",
-    "imge": "./img_modal/sedan/the-all-new-grandeur-hybrid.png"
+    "imge": "./img_modal/sedan/the-all-new-grandeur-hybrid.png",
+    "imge_1280": "./img_modal/sedan/the-all-new-grandeur-hybrid1280.png",
+    "imge_480": "./img_modal/sedan/the-all-new-grandeur-hybrid480.png"
   },
   {
     "subtitle": "일상과 일상 사이를 열다.",
@@ -105,7 +127,9 @@
     "mileage": "~11.0km/l",
     "people": "5/6/7명",
     "displacement": "~2,497cc",
-    "imge": "./img_modal/SUV/the-all-new-santafe.png"
+    "imge": "./img_modal/SUV/the-all-new-santafe.png",
+    "imge_1280": "./img_modal/SUV/the-all-new-santafe1280.png",
+    "imge_480": "./img_modal/SUV/the-all-new-santafe480.png"
   },
   {
     "subtitle": "혼라이프를 즐기다",
@@ -114,7 +138,9 @@
     "mileage": "~13.7km/l",
     "people": "5명",
     "displacement": "~1,598cc",
-    "imge": "./img_modal/SUV/venue.png"
+    "imge": "./img_modal/SUV/venue.png",
+    "imge_1280": "./img_modal/SUV/venue1280.png",
+    "imge_480": "./img_modal/SUV/venue480.png"
   },
   {
     "subtitle": "새로운 차원의 플레이",
@@ -123,7 +149,9 @@
     "mileage": "~13.6km/l",
     "people": "5명",
     "displacement": "~1,999cc",
-    "imge": "./img_modal/SUV/the-all-new-kona.png"
+    "imge": "./img_modal/SUV/the-all-new-kona.png",
+    "imge_1280": "./img_modal/SUV/the-all-new-kona1280.png",
+    "imge_480": "./img_modal/SUV/the-all-new-kona480.png"
   },
   {
     "subtitle": "더 오래 머물수록 빛나는 가치",
@@ -132,7 +160,9 @@
     "mileage": "~14.5km/l",
     "people": "5명",
     "displacement": "~1,988cc",
-    "imge": "./img_modal/SUV/tucson.png"
+    "imge": "./img_modal/SUV/tucson.png",
+    "imge_1280": "./img_modal/SUV/tucson1280.png",
+    "imge_480": "./img_modal/SUV/tucson480.png"
   },
   {
     "subtitle": "당신의 모든 세상",
@@ -141,7 +171,9 @@
     "mileage": "~12.4km/l",
     "people": "7/8명",
     "displacement": "~3,778cc",
-    "imge": "./img_modal/SUV/palisade.png"
+    "imge": "./img_modal/SUV/palisade.png",
+    "imge_1280": "./img_modal/SUV/palisade1280.png",
+    "imge_480": "./img_modal/SUV/palisade480.png"
   },
   {
     "subtitle": "새로운 성공을 준비하다",
@@ -150,7 +182,9 @@
     "mileage": "~7.0km/l",
     "people": "3명",
     "displacement": "~2.469cc",
-    "imge": "./img_modal/truck_taxi/porter2.png"
+    "imge": "./img_modal/truck_taxi/porter2.png",
+    "imge_1280": "./img_modal/truck_taxi/porter21280.png",
+    "imge_480": "./img_modal/truck_taxi/porter2480.png"
   },
   {
     "subtitle": "압도적인 플래그십 세단의 자신감",
@@ -159,7 +193,9 @@
     "mileage": "~7.8km/l",
     "people": "5명",
     "displacement": "~3,470cc",
-    "imge": "./img_modal/truck_taxi/the-all-new-grandeur-taxi.png"
+    "imge": "./img_modal/truck_taxi/the-all-new-grandeur-taxi.png",
+    "imge_1280": "./img_modal/truck_taxi/the-all-new-grandeur-taxi1280.png",
+    "imge_480": "./img_modal/truck_taxi/the-all-new-grandeur-taxi480.png"
   },
   {
     "subtitle": "Next Mobility Life",
@@ -168,7 +204,9 @@
     "mileage": "~6.7km/l",
     "people": "7~9명",
     "displacement": "~2,199cc",
-    "imge": "./img_modal/truck_taxi/staria-lounge-mobility.png"
+    "imge": "./img_modal/truck_taxi/staria-lounge-mobility.png",
+    "imge_1280": "./img_modal/truck_taxi/staria-lounge-mobility1280.png",
+    "imge_480": "./img_modal/truck_taxi/staria-lounge-mobility480.png"
   },
   {
     "subtitle": "",
@@ -177,6 +215,8 @@
     "mileage": "~8.8km/l",
     "people": "3명",
     "displacement": "~2,497cc",
-    "imge": "./img_modal/truck_taxi/porter2-special-vehicle.png"
+    "imge": "./img_modal/truck_taxi/porter2-special-vehicle.png",
+    "imge_1280": "./img_modal/truck_taxi/porter2-special-vehicle1280.png",
+    "imge_480": "./img_modal/truck_taxi/porter2-special-vehicle480.png"
   }
 ]
