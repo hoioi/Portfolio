@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 10px;
 }
 
 ul,
@@ -44,13 +45,13 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 3rem;
 }
 
 .container .pixar {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  /* gap: 40px; */
 }
 
 /*----contentbox----*/
@@ -214,7 +215,7 @@ a {
 
 .container h3 {
   color: var(--white-color);
-  font-size: 100px;
+  font-size: 10rem;
   letter-spacing: 50px;
   font-family: "Playfair Display", serif;
 }
@@ -239,10 +240,142 @@ a {
 }
 
 .container .click {
-  font-size: 23px;
+  font-size: 2.3rem;
   font-weight: 700;
   color: #fff;
   position: absolute;
   top: 840px;
   left: 42.6%;
+}
+
+@media screen and (max-width: 1280px) {
+  * {
+    font-size: 6px;
+  }
+
+  .container h1 {
+    margin-top: 20%;
+  }
+
+  /*----contentbox----*/
+
+  .container .contentbox {
+    margin-top: 8%;
+    display: flex;
+    gap: 10px;
+  }
+
+  /*---- Toystory----*/
+
+  .container .contentbox .movie {
+    width: 100px;
+    height: 300px;
+    background: url("./imgs/toystory.jpg") no-repeat center center;
+    background-size: cover;
+    filter: grayscale(1);
+    transition: 0.8s;
+  }
+
+  .container .contentbox .movie:hover {
+    transform: translateY(-40px);
+  }
+
+  .container .contentbox .movie_shadow {
+    width: 100px;
+    height: 300px;
+  }
+
+  .container .contentbox .movie_shadow::before {
+    width: 100px;
+    height: 300px;
+  }
+
+  .container .pixar #dark {
+    width: 70px;
+    height: 90px;
+  }
+
+  .container .pixar #white {
+    width: 70px;
+    height: 90px;
+  }
+
+  .container .click {
+    left: 44.5%;
+    top: 820px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  * {
+    font-size: 4px;
+  }
+
+  .container {
+    position: relative;
+    transform: translateY(100px);
+  }
+
+  .container h1 {
+    margin-top: 15%;
+  }
+
+  .container .contentbox {
+    margin-top: 15%;
+    display: flex;
+    gap: 5px;
+  }
+
+  /*---- Toystory----*/
+
+  .container .contentbox .movie {
+    width: 30px;
+    height: 100px;
+    background: url("./imgs/toystory.jpg") no-repeat center center;
+    background-size: cover;
+    filter: grayscale(1);
+    transition: 0.8s;
+  }
+
+  .container .contentbox .movie:hover {
+    transform: translateY(-40px);
+  }
+
+  .container .contentbox .movie_shadow {
+    width: 30px;
+    height: 100px;
+  }
+
+  .container .contentbox .movie_shadow::before {
+    width: 30px;
+    height: 100px;
+  }
+
+  .container .pixar {
+    top: 350px;
+    left: 15%;
+    position: absolute;
+  }
+
+  .container h3 {
+    color: var(--white-color);
+    font-size: 10rem;
+    letter-spacing: 20px;
+    font-family: "Playfair Display", serif;
+  }
+
+  .container .pixar #dark {
+    width: 60px;
+    height: 80px;
+  }
+
+  .container .pixar #white {
+    width: 60px;
+    height: 80px;
+  }
+
+  .container .click {
+    left: 33%;
+    top: 460px;
+  }
 }

@@ -267,10 +267,6 @@ body {
     font-size: 6px;
   }
 
-  .wrap {
-    width: 1280px;
-  }
-
   .container .search {
     width: 500px;
     height: 60px;
@@ -324,10 +320,6 @@ body {
 @media screen and (max-width: 480px) {
   * {
     font-size: 4px;
-  }
-
-  .wrap {
-    width: 480px;
   }
 
   .container h1 {

@@ -1,0 +1,700 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: 0;
+}
+
+.wrap {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 6rem;
+}
+
+.container .perfumebox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 80px;
+}
+
+/*----LA_TULIPE----*/
+
+.container .perfumebox .perfume {
+  width: 300px;
+  height: 400px;
+}
+
+.container .perfumebox .perfume .imgbox {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.container .perfumebox .perfume .imgbox:hover .underline {
+  display: block;
+}
+
+.container .perfumebox .perfume .imgbox .img {
+  background: url("./imgs/LA_TULIPE.jpg") center center;
+  width: 100%;
+  height: 100%;
+}
+
+.container .perfumebox .perfume .imgbox .underline {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 20%;
+  background: rgba(51, 51, 51, 0.8);
+  display: none;
+}
+
+.container .perfumebox .perfume .imgbox .underline .clickIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.container .perfumebox .perfume .imgbox .underline .clickIcon i {
+  font-size: 2.5rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.container .perfumebox .perfume .bottombox {
+  width: 100%;
+  height: 20%;
+  background: #f0f2f5;
+}
+
+.container .perfumebox .perfume h3 {
+  font-size: 2rem;
+}
+
+.container .perfumebox .perfume h4 {
+  font-size: 1.5rem;
+  color: #707070;
+  margin-top: 5px;
+}
+
+.container .perfumebox .perfume p {
+  font-size: 1.4rem;
+  color: #707070;
+}
+
+/*----MOJAVE_GHOST----*/
+
+.container .perfumebox .perfume:nth-child(2) .img {
+  background: url("./imgs/MOJAVE_GHOST.jpg") center center;
+}
+
+/*----BLANCHE----*/
+
+.container .perfumebox .perfume:nth-child(3) .img {
+  background: url("./imgs/BLANCHE.jpg") center center;
+}
+
+/*----GYPSY_WATER----*/
+
+.container .perfumebox .perfume:nth-child(4) .img {
+  background: url("./imgs/GYPSY_WATER.jpg") center center;
+}
+
+/*----modal----*/
+
+.modalWrap {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.7);
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.modalWrap.click {
+  display: block;
+}
+
+.modal_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  width: 1300px;
+  height: 850px;
+  background: #fff;
+}
+
+.modal .modal_header {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-right: 30px;
+}
+
+.modal .modal_section {
+  width: 100%;
+  height: 90%;
+  display: flex;
+}
+
+.modal .modal_header i {
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.modal .leftbox {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal .leftbox .modal_img {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 400px;
+  height: 400px;
+}
+
+.modal .leftbox .modal_img_1280 {
+  display: none;
+}
+
+.modal .leftbox .modal_img_480 {
+  display: none;
+}
+
+.modal .rightbox {
+  width: 60%;
+  height: 100%;
+}
+
+.modal .rightbox .brand {
+  margin-top: 50px;
+}
+
+.modal .rightbox h1 {
+  font-size: 2.5rem;
+}
+
+.modal .rightbox h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.modal .rightbox h3 {
+  font-size: 2.5rem;
+}
+
+.modal .rightbox p {
+  font-size: 2rem;
+}
+
+.modal .rightbox .price {
+  display: flex;
+  align-items: end;
+  gap: 10px;
+}
+
+.modal .rightbox .title_price {
+  font-size: 3rem;
+  margin-top: 20px;
+}
+
+.modal .rightbox h4 {
+  font-size: 2rem;
+}
+
+.hide {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+
+.hide .fa-plus {
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.hide.open {
+  display: none;
+}
+
+.delivery {
+  margin-top: 30px;
+  align-items: center;
+  gap: 100px;
+  display: none;
+}
+
+.delivery.open {
+  display: flex;
+}
+
+.deliveryTime {
+  margin-top: 20px;
+  gap: 82px;
+  display: none;
+}
+
+.deliveryTime.open {
+  display: flex;
+}
+
+.deliveryTime span {
+  color: #d99c63;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+.deliveryTime .arrival {
+  width: 500px;
+  height: 120px;
+  background: #f0f0f0;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.deliveryTime .arrival .plus01 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.deliveryTime .arrival .plus01 h2 {
+  font-size: 1.5rem;
+  color: #d99c63;
+  margin: 0;
+}
+
+.deliveryTime .arrival .plus01 h3 {
+  font-size: 1.5rem;
+}
+
+.deliveryTime .arrival .plus01 p {
+  font-size: 1.5rem;
+  color: #d99c63;
+}
+
+.deliveryTime .arrival .plus02 {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.deliveryTime .arrival .plus02 h2 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.deliveryTime .arrival .plus02 h3 {
+  font-size: 1.5rem;
+}
+
+.deliveryTime .arrival .plus02 p {
+  font-size: 1.5rem;
+}
+
+.quantitybox {
+  margin-top: 40px;
+  display: flex;
+  gap: 120px;
+}
+
+.quantity {
+  display: flex;
+}
+
+.quantity .num {
+  width: 418px;
+  height: 40px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border: 1px solid#ccc;
+  font-size: 1.5rem;
+}
+
+.quantitybox .quantity button {
+  width: 40px;
+  height: 40px;
+  font-size: 2rem;
+  background: #fff;
+  border: 1px solid#ccc;
+  cursor: pointer;
+}
+
+.rightbox hr {
+  width: 700px;
+  margin-top: 30px;
+}
+
+.salebox {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 500px;
+}
+
+.salebox .sale {
+  display: flex;
+  align-items: end;
+}
+
+.salebox .sale h3 {
+  font-size: 3.5rem;
+}
+
+.shoppingbtn {
+  margin-top: 60px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.shoppingbtn button {
+  width: 300px;
+  height: 50px;
+  border: none;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+}
+
+.shoppingbtn .shoppingbag {
+  background: #ccc;
+}
+
+.shoppingbtn .buy {
+  background: #000;
+}
+
+@media screen and (max-width: 1280px) {
+  * {
+    font-size: 4px;
+  }
+
+  .container .perfumebox {
+    gap: 50px;
+    margin-top: 50px;
+  }
+
+  .container .perfumebox .perfume {
+    width: 200px;
+    height: 300px;
+  }
+
+  .container .perfumebox .perfume .imgbox .img {
+    background: url("./imgs/LA_TULIPE_1280.jpg") no-repeat center center;
+  }
+
+  /*----MOJAVE_GHOST----*/
+
+  .container .perfumebox .perfume:nth-child(2) .img {
+    background: url("./imgs/MOJAVE_GHOST_1280.jpg") no-repeat center center;
+  }
+
+  /*----BLANCHE----*/
+
+  .container .perfumebox .perfume:nth-child(3) .img {
+    background: url("./imgs/BLANCHE_1280.jpg") no-repeat center center;
+  }
+
+  /*----GYPSY_WATER----*/
+
+  .container .perfumebox .perfume:nth-child(4) .img {
+    background: url("./imgs/GYPSY_WATER_1280.jpg") no-repeat center center;
+  }
+
+  /*----modal----*/
+
+  .modal {
+    width: 960px;
+    height: 700px;
+    background: #fff;
+  }
+
+  .modal .leftbox .modal_img {
+    display: none;
+  }
+
+  .modal .leftbox .modal_img_1280 {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    display: block;
+  }
+
+  .modal .rightbox .brand {
+    margin-top: 40px;
+  }
+
+  .modal .rightbox h2 {
+    margin-top: 8px;
+  }
+
+  .modal .rightbox .title_price {
+    margin-top: 15px;
+  }
+
+  .hide {
+    margin-top: 20px;
+    gap: 60px;
+  }
+
+  .delivery {
+    margin-top: 20px;
+    gap: 60px;
+  }
+
+  .deliveryTime {
+    margin-top: 20px;
+    gap: 50px;
+  }
+
+  .deliveryTime .arrival {
+    width: 350px;
+    height: 100px;
+    gap: 10px;
+  }
+
+  .deliveryTime .arrival .plus01 {
+    gap: 20px;
+  }
+
+  .deliveryTime .arrival .plus02 {
+    gap: 20px;
+  }
+
+  .quantitybox {
+    margin-top: 20px;
+    gap: 70px;
+  }
+
+  .quantity .num {
+    width: 275px;
+    height: 40px;
+  }
+
+  .quantitybox .quantity button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .rightbox hr {
+    width: 500px;
+    margin-top: 20px;
+  }
+
+  .salebox {
+    margin-top: 20px;
+    gap: 350px;
+  }
+
+  .shoppingbtn {
+    margin-top: 40px;
+    gap: 15px;
+  }
+
+  .shoppingbtn button {
+    width: 210px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  * {
+    font-size: 4px;
+  }
+
+  .container .perfumebox {
+    gap: 20px;
+    margin-top: 50px;
+  }
+
+  .container .perfumebox .perfume {
+    width: 70px;
+    height: 170px;
+  }
+
+  .container .perfumebox .perfume .imgbox .img {
+    background: url("./imgs/LA_TULIPE_480.jpg") no-repeat center center;
+  }
+
+  /*----MOJAVE_GHOST----*/
+
+  .container .perfumebox .perfume:nth-child(2) .img {
+    background: url("./imgs/MOJAVE_GHOST_480.jpg") no-repeat center center;
+  }
+
+  /*----BLANCHE----*/
+
+  .container .perfumebox .perfume:nth-child(3) .img {
+    background: url("./imgs/BLANCHE_480.jpg") no-repeat center center;
+  }
+
+  /*----GYPSY_WATER----*/
+
+  .container .perfumebox .perfume:nth-child(4) .img {
+    background: url("./imgs/GYPSY_WATER_480.jpg") no-repeat center center;
+  }
+
+  .container .perfumebox .perfume h4 {
+    font-size: 1.4rem;
+    margin-top: 0;
+  }
+
+  /*----modal----*/
+
+  .modal {
+    width: 360px;
+    height: 320px;
+    background: #fff;
+  }
+
+  .modal .modal_header {
+    padding-right: 20px;
+  }
+
+  .modal .leftbox .modal_img_1280 {
+    display: none;
+  }
+
+  .modal .leftbox .modal_img_480 {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    display: block;
+  }
+
+  .modal .rightbox .brand {
+    margin-top: 10px;
+  }
+
+  .modal .rightbox h2 {
+    margin-top: 5px;
+  }
+
+  .modal .rightbox .title_price {
+    margin-top: 5px;
+  }
+
+  .hide {
+    margin-top: 10px;
+    gap: 20px;
+  }
+
+  .delivery {
+    margin-top: 10px;
+    gap: 20px;
+  }
+
+  .deliveryTime {
+    margin-top: 10px;
+    gap: 13px;
+  }
+
+  .deliveryTime .arrival {
+    width: 150px;
+    height: 60px;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .deliveryTime .arrival .plus01 {
+    gap: 20px;
+  }
+
+  .deliveryTime .arrival .plus02 {
+    gap: 20px;
+  }
+
+  .quantitybox {
+    margin-top: 10px;
+    gap: 29px;
+  }
+
+  .quantity .num {
+    width: 110px;
+    height: 20px;
+  }
+
+  .quantitybox .quantity button {
+    width: 20px;
+    height: 20px;
+  }
+
+  .rightbox hr {
+    width: 180px;
+    margin-top: 15px;
+  }
+
+  .salebox {
+    margin-top: 10px;
+    gap: 100px;
+  }
+
+  .shoppingbtn {
+    margin-top: 10px;
+    gap: 15px;
+  }
+
+  .shoppingbtn button {
+    width: 80px;
+    height: 20px;
+  }
+}

@@ -2,24 +2,32 @@
   {
     "title_name": "라 튤립 오 드 퍼퓸 100ml",
     "img": "./imgs/LA_TULIPE.jpg",
+    "img_1280": "./imgs/LA_TULIPE_1280.jpg",
+    "img_480": "./imgs/LA_TULIPE_480.jpg",
     "title_price": "342,000",
     "sale_price": "342000"
   },
   {
     "title_name": "모하비 고스트 오 드 퍼퓸 100ml",
     "img": "./imgs/MOJAVE_GHOST.jpg",
+    "img_1280": "./imgs/MOJAVE_GHOST_1280.jpg",
+    "img_480": "./imgs/MOJAVE_GHOST_480.jpg",
     "title_price": "342,000",
     "sale_price": "342000"
   },
   {
     "title_name": "블랑쉬 오 드 퍼퓸 100ml",
     "img": "./imgs/BLANCHE.jpg",
+    "img_1280": "./imgs/BLANCHE_1280.jpg",
+    "img_480": "./imgs/BLANCHE_480.jpg",
     "title_price": "342,000",
     "sale_price": "342000"
   },
   {
     "title_name": "집시 워터 오 드 퍼퓸 100ml",
     "img": "./imgs/GYPSY_WATER.jpg",
+    "img_1280": "./imgs/GYPSY_WATER_1280.jpg",
+    "img_480": "./imgs/GYPSY_WATER_480.jpg",
     "title_price": "342,000",
     "sale_price": "342000"
   }
