@@ -1,0 +1,55 @@
+* {
+  font-size: 10px;
+}
+
+.galss {
+  font-size: 4rem;
+  margin-top: 30px;
+  color: #033495;
+}
+
+.list {
+  font-size: 4rem;
+  margin-top: 30px;
+  color: var(--macRed-color);
+}
+
+.Comment {
+  font-size: 4rem;
+  margin-top: 30px;
+  color: #453e3b;
+}
+
+.shopping {
+  font-size: 4rem;
+  margin-top: 30px;
+  color: #17706e;
+}
+
+@media screen and (max-width: 1280px) {
+  * {
+    font-size: 6px;
+  }
+
+  @media screen and (max-width: 480px) {
+    * {
+      font-size: 4px;
+    }
+
+    .galss {
+      margin-top: 20px;
+    }
+
+    .list {
+      margin-top: 20px;
+    }
+
+    .Comment {
+      margin-top: 20px;
+    }
+
+    .shopping {
+      margin-top: 20px;
+    }
+  }
+}

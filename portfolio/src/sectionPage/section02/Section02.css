@@ -1,0 +1,22 @@
+* {
+  font-size: 10px;
+}
+
+.Sectioin02Button {
+  margin-top: 80px;
+}
+
+@media screen and (max-width: 1280px) {
+  * {
+    font-size: 6px;
+  }
+
+  @media screen and (max-width: 480px) {
+    * {
+      font-size: 4px;
+    }
+    .Sectioin02Button {
+      margin-top: 40px;
+    }
+  }
+}

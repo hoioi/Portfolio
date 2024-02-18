@@ -1,0 +1,31 @@
+* {
+  font-size: 10px;
+}
+
+.xmark {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  font-size: 50px;
+  color: #707070;
+  cursor: pointer;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 1280px) {
+  * {
+    font-size: 6px;
+  }
+
+  @media screen and (max-width: 480px) {
+    * {
+      font-size: 4px;
+    }
+  }
+}
